@@ -1,11 +1,20 @@
 /* подключение шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,300;1,500;1,600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,300;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+:root {
+    --main-dark-color: rgb(25, 24, 31);
+    --main-color: rgb(209, 87, 103);
+} 
+/*---------------------------------ШАПКА--------------------------------*/
 .header-top {
-    position: relative;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
     padding: 10px 10px;
-    background-color: rgb(25, 24, 31); /*цвет верхней части меню*/
+    background-color: var(--main-dark-color); /*цвет верхней части меню*/
+    z-index: 8;
 }
 .header-top_container {
     font-family: 'Raleway', sans-serif; /*шрифт меню*/
@@ -36,4 +45,94 @@
     color: white;
     margin-right: 5px;
     visibility: visible; /*иконка останется видимой, когда будем сворачивать меню в бургер*/
-} 
+}
+.icon-menu{
+    display: none;
+}
+/*-------------------------НАПКА НИЖНИЙ УРОВЕНЬ------------------------------*/
+.header-body{
+    position: relative;
+    padding: 10px 10px;
+    margin-top: 70px;
+    background-color: rgb(230, 233, 238);
+}
+.header-body_container{
+    display: flex;
+    max-width: 1200;
+    align-items: center;
+    max-width: 1200px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    min-height: 40px;
+    margin: auto;
+    gap: 15px;
+}
+.header-body_actions{
+    display: flex;
+    gap: 25px;
+}
+.header-body_actions a{
+    color: var(--main-dark-color);
+}
+.phone_call {
+    font-weight: bold;
+    color: var(--main-color);
+    text-shadow: 0px 1px 3px rgb(228, 228, 228);
+    letter-spacing: 0.4px;
+}
+.header-logo {
+    flex-grow: 0.2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--main-dark-color);
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.actions_location::before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 140%;
+    color: var(--main-color);
+    margin-right: 5px;
+    visibility: visible;
+}
+.actions_fav::before{
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--main-color);
+    font-size: 140%;
+}
+.actions_cart::after{
+    content: "\f07a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: var(--main-dark-color);
+    font-size: 140%;
+}
+.header-body_search {
+    position: relative;
+    flex-grow: 1;
+}
+.header-search_input {
+    border-radius: 4px;
+    height: 28px;
+    width: 360px;
+    padding-left: 28px;
+    background-color: rgba(255, 255, 255, 0.689);
+    border: 1px solid rgba(112, 112, 112, 0.615);
+}
+.header-search_button {
+    background-color: transparent;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+.header-search_button::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: rgba(103, 103, 104, 0.547);
+    font-size: 140%;
+}
