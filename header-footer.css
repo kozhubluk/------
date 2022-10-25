@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,300;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body {
+    background-color: var(--main-dark-color);
+}
+
 :root {
-    --main-dark-color: rgb(25, 24, 31);
-    --main-color: rgb(209, 87, 103);
+    /*основные цвета сайта*/
+    --main-dark-color: rgb(35, 33, 42);
+    --main-color: #dc5b7d;
+    --main-background-color: rgb(232, 232, 233);;
 } 
 /*---------------------------------ШАПКА--------------------------------*/
 .header-top {
-    position: fixed;
+    position: fixed; /*меню будет всегда завфиксировано сверху*/
     left:0;
     top: 0;
     width: 100%;
@@ -18,7 +25,7 @@
 }
 .header-top_container {
     font-family: 'Raleway', sans-serif; /*шрифт меню*/
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -26,9 +33,13 @@
     min-height: 50px;
     margin: auto;
     gap: 10px;
-}
+} 
 .header-top a {
     color: rgb(255, 255, 255); /*цвет шрифта*/
+    transition: .3s;
+}
+.header-top a:hover {  /*пункты меню при наведении*/
+    opacity: 70%;
 }
 .header-top_menu {
     flex: 1 1 auto;
@@ -52,17 +63,18 @@
 /*-------------------------НАПКА НИЖНИЙ УРОВЕНЬ------------------------------*/
 .header-body{
     position: relative;
+    z-index: 7;
     padding: 10px 10px;
     margin-top: 70px;
-    background-color: rgb(230, 233, 238);
+    width: 100%;
+    background-color: var(--main-background-color);
 }
 .header-body_container{
     display: flex;
-    max-width: 1200;
-    align-items: center;
     max-width: 1200px;
+    align-items: center;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Comfortaa';
     min-height: 40px;
     margin: auto;
     gap: 15px;
@@ -71,8 +83,14 @@
     display: flex;
     gap: 25px;
 }
-.header-body_actions a{
+.header-body_actions a,
+.actions_phone{
     color: var(--main-dark-color);
+    transition: .25s;
+}
+.header-body_actions a:hover,
+.actions_phone:hover{
+    transform: translateY(-6px); /*иконки поднимаютс при наведении*/
 }
 .phone_call {
     font-weight: bold;
@@ -80,15 +98,19 @@
     text-shadow: 0px 1px 3px rgb(228, 228, 228);
     letter-spacing: 0.4px;
 }
-.header-logo {
+.header-logo { /*стиль логотипа*/
     flex-grow: 0.2;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: var(--main-dark-color);
     font-size: 40px;
     letter-spacing: 5px;
+    transition: .4S;
 }
-.actions_location::before {
+.header-logo:hover {
+    transform: scale(110%);
+}
+.actions_location::before { /*иконка локации*/
     content: "\f3c5";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -97,14 +119,14 @@
     margin-right: 5px;
     visibility: visible;
 }
-.actions_fav::before{
+.actions_fav::before{ /*иконка сердца*/
     content: "\f004";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: var(--main-color);
     font-size: 140%;
 }
-.actions_cart::after{
+.actions_cart::after{ /*иконка корзины*/
     content: "\f07a";
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -120,6 +142,8 @@
     height: 28px;
     width: 360px;
     padding-left: 28px;
+    color: var(--main-dark-color);
+    font-size: 16px;
     background-color: rgba(255, 255, 255, 0.689);
     border: 1px solid rgba(112, 112, 112, 0.615);
 }
@@ -136,3 +160,4 @@
     color: rgba(103, 103, 104, 0.547);
     font-size: 140%;
 }
+
