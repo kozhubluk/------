@@ -1,14 +1,15 @@
-@import url(../../header-footer.css);
+@import url(../../header-footer.css); /*подулючаем стиль с хедером и футером*/
 main {
   font-family: 'Comfortaa';
 }
+/*форма регитсрации*/
 .registration_container {
     max-width: 1200px;
     width: 80%;
     margin: auto;
 }
 .registration_block {
-    background: linear-gradient(to right, rgb(77, 111, 170), rgb(242, 163, 176));
+    background: linear-gradient(to right, rgb(88, 115, 181), rgb(242, 163, 176));
     padding: 120px 20px;
     height: 100%;
 }
@@ -158,23 +159,23 @@ main {
     z-index: 6;
     right: -60px;
   }
-/********************Стеклянные карточки******************/
+/****************Стеклянные карточки******************/
 .cards_container {
     color: rgb(232, 232, 233);
     max-width: 1200px;
     margin: auto;
     font-size: 20px;
-    padding: 15px 10px;
+    padding: 25px 20px;
 }
 .cards_container > div{
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .cards_container h1{
     font-size: 32px;
     margin-bottom: 20px;
 }
 .cards_items {
-  gap:40px;
+  gap: 40px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -210,7 +211,7 @@ main {
   flex-wrap: wrap;
 }
 .card_item h2{
-  font-size: 24px;
+  font-size: 25px;
   text-align: center;
   margin-bottom: 5px;
 }
@@ -225,12 +226,15 @@ main {
 	right: 0;
   margin: auto;
 }
-.card_details {
+.card_details { /*текст карточки*/
   position: absolute;
+  text-align: center;
+  font-size: 18px;
+ 
   bottom: 0;
-  padding: 10px;
+  padding: 15px;
 }
-.box::before{
+.box::before{ /***анимированная рамка***/
   content: "";
   position: absolute;
   top: 0;
@@ -255,12 +259,11 @@ main {
   animation: rotate_cube 5s linear infinite;
   animation-delay: -2.5s;
 }
- 
- @keyframes rotate_cube {
+@keyframes rotate_cube { /*анимация прокрутки*/
   from{
     rotate: 0deg;
   }
   to{
     rotate: 360deg;
   }
- }
+}

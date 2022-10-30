@@ -12,162 +12,208 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-top">
-            <div class="header-top_container">
-                <div class="header-top_menu">
-                    <nav class="menu_body">
-                        <ul class="menu_list">
-                            <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                            <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                            <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                            <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                            <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <a href="" class="header-top-user">Личный кабинет</a>
-                <button type="button" class="icon-menu"><span>ddd</span></button>
-            </div>
-        </div>
-        <div class="header-body">
-            <div class="header-body_container">
-                <a class="header-logo">SweetLand</a>
-                <div class="header-body_search">
-                    <form action="#" class="search">
-                        <button type="submit" class="header-search_button"></button>
-                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="header-search_input" placeholder="">
-                    </form>
-                </div>
-                <div class="header-body_actions">
-                    <a href="#" class="actions_location">Москва</a>
-                    <div class="actions_phone">
-                        <p class="phone_call">Позвоните нам!</p>
-                        <a href=”tel:89207662452” class="phone-num">+7(920)766-24-52</a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top_container">
+                    <div class="header-top_menu">
+                        <nav class="menu_body">
+                            <ul class="menu_list">
+                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <a href="#" class="actions_fav"></a>
-                    <a href="#" class="actions_cart"></a>
+                    <a href="" class="header-top-user">Личный кабинет</a>
+                    <button type="button" class="icon-menu"><span>ddd</span></button>
                 </div>
             </div>
-        </div>
-       
-    </header>
-    <main>
-        <div class="main_container">
-            
-            <div class="registration_block"> 
-               
-                <div class="registration_container">
+            <div class="header-body">
+                <div class="header-body_container">
+                    <a class="logo">SweetLand</a>
+                    <div class="header-body_search">
+                        <form action="#" class="search">
+                            <button type="submit" class="header-search_button"></button>
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="header-search_input" placeholder="">
+                        </form>
+                    </div>
+                    <div class="header-body_actions">
+                        <a href="#" class="actions_location">Москва</a>
+                        <div class="actions_phone">
+                            <p class="phone_call">Позвоните нам!</p>
+                            <a href=”tel:89207662452” class="phone-num">+7(920)766-24-52</a>
+                        </div>
+                        <a href="#" class="actions_fav"></a>
+                        <a href="#" class="actions_cart"></a>
+                    </div>
+                </div>
+            </div>
+           
+        </header>
+        <main class="main">
+            <div class="main_container">
                 
-                    <div class="registration">   
-                        
-                        <div class="title">Регистрация</div>
-                        <div class="redistration_form">
-                            <form action="#" class=>
-                                <div class="user-details">
-                                    <div class="input-box">
-                                        <span class="details">Имя</span>
-                                        <input type="text" placeholder="Введите свое имя" required>
+                <div class="registration_block"> 
+                   
+                    <div class="registration_container">
+                    
+                        <div class="registration">   
+                            
+                            <div class="title">Регистрация</div>
+                            <div class="redistration_form">
+                                <form action="#" class=>
+                                    <div class="user-details">
+                                        <div class="input-box">
+                                            <span class="details">Имя</span>
+                                            <input type="text" placeholder="Введите свое имя" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Фамилия</span>
+                                            <input type="text" placeholder="Введите фамилию" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Email</span>
+                                            <input type="text" placeholder="example@yandex.ru" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Номер телефона</span>
+                                            <input type="text" placeholder="8(800) 555-35-35" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Город</span>
+                                            <input type="text" placeholder="Введите ваш город" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Пароль</span>
+                                            <input type="text" placeholder="Введите пароль" required>
+                                        </div>
+                                        <button class="registration_btn">зарегистрироваться</button>
                                     </div>
-                                    <div class="input-box">
-                                        <span class="details">Фамилия</span>
-                                        <input type="text" placeholder="Введите фамилию" required>
-                                    </div>
-                                    <div class="input-box">
-                                        <span class="details">Email</span>
-                                        <input type="text" placeholder="example@yandex.ru" required>
-                                    </div>
-                                    <div class="input-box">
-                                        <span class="details">Номер телефона</span>
-                                        <input type="text" placeholder="8(800) 555-35-35" required>
-                                    </div>
-                                    <div class="input-box">
-                                        <span class="details">Город</span>
-                                        <input type="text" placeholder="Введите город, в котором вы живете" required>
-                                    </div>
-                                    <div class="input-box">
-                                        <span class="details">Пароль</span>
-                                        <input type="text" placeholder="Введите пароль" required>
-                                    </div>
-                                    <button class="registration_btn">dfsd</button>
-                                </div>
-                                
-                            </form>
+                                    
+                                </form>
+                            </div>
                         </div>
+                        <div class="circle" style="--i:2"></div>
+                        <div class="circle" style="--i:3"></div>
+                        <div class="circle" style="--i:2.5"></div>
+                        <div class="circle" style="--i:3.6"></div>
+                        <div class="circle" style="--i:4"></div>
+                        <div class="circle" style="--i:3.9"></div>
                     </div>
-                    <div class="circle" style="--i:2"></div>
-                    <div class="circle" style="--i:3"></div>
-                    <div class="circle" style="--i:2.5"></div>
-                    <div class="circle" style="--i:3.6"></div>
-                    <div class="circle" style="--i:4"></div>
-                    <div class="circle" style="--i:3.9"></div>
                 </div>
-            </div>
-            <div class="cards_block">
-                <div class="cards_container">
-                    <h1>Еще не зарегистрированы в личном кабинете?</h1>
-                    <div class="lk_description">
-                        Мы заботимся о наших покупателях! Именно поэтому мы считаем, что Вам стоит ознакомиться со всеми преимуществами, которые дает личный кабинет: 
-                    </div>
-                    <div class="cards_items">
-                        <div class="box">
-                            <div class="card_item">
-                                <img src="img/card1.png">
-                                <div class="card_text_container">
-                                    <div class="card_details">
-                                        <h2 class="card_name">Бонусы</h2>
-                                        <div class="card_text">
-                                            Благо Lorem ipsum dolor sit amet consectetur   dolore aut ad tempora porro voluptat ibus nobis hic, asperior  
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="cards_block">
+                    <div class="cards_container">
+                        <h1>Еще не зарегистрированы в личном кабинете?</h1>
+                        <div class="lk_description">
+                            Мы заботимся о наших покупателях! Именно поэтому мы считаем, что Вам стоит ознакомиться со всеми преимуществами, которые дает личный кабинет: 
                         </div>
-                        <div class="box">
-                            <div class="card_item">
-                                <img src="img/card4.png">
-                                <div class="card_text_container">
-                                    <div class="card_details">
-                                        <h2 class="card_name">Бонусы еще</h2>
-                                        <div class="card_text">
-                                            Lorem ipsum dolor sit amet consec tetur adipi sicing elit. Illo, aspernatur eos quasi explicabo maiores 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="card_item">
-                                <img src="img/card2.png">
-                                <div class="card_text_container">
-                                    <div class="card_details">
-                                        <h2 class="card_name">Бонусы</h2>
-                                        <div class="card_text">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non inventore vitae, exercitationem   
+                        <div class="cards_items">
+                            <div class="box">
+                                <div class="card_item">
+                                    <img src="img/card1.png">
+                                    <div class="card_text_container">
+                                        <div class="card_details">
+                                            <h2 class="card_name">Умные рекомендации</h2>
+                                            <div class="card_text">
+                                                Личный кабинет позволяет запоминать ваши предпочтения и составлять более точные рекомнедации. 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="card_item">
-                                    <img src="img/card6.png">
+                                    <img src="img/card4.png">
                                     <div class="card_text_container">
                                         <div class="card_details">
                                             <h2 class="card_name">Бонусы</h2>
                                             <div class="card_text">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non inventore vitae, exercitationem   
+                                                С кажой Вашей покупки накапливаются бонусы, которыми можно оплатичивать до 100% стоимости нового заказа.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="box">
+                                <div class="card_item">
+                                    <img src="img/card2.png">
+                                    <div class="card_text_container">
+                                        <div class="card_details">
+                                            <h2 class="card_name">Удобство</h2>
+                                            <div class="card_text">
+                                                Офоромление заказа становится в несколько раз быстрее и удобнее! Совершайте любые покупки е в несколько кликов.  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-    </footer>
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer-menu">
+                    <div class="footer_menu">
+                        <nav class="footer_menu_body">
+                            <ul class="footer_menu_list">
+                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer_contacts">
+                        <address>
+                            <h2>Контакты</h2>
+                            <div class="footer-location">
+                                Москва Lorem, ipsum dolo eert erger err.
+                            </div>
+                            <div class="footer-email">
+                                <a href="mailto:sweetlandshop@yandex.ru">sweetlandshop@yandex.ru</a><br>
+                            </div>
+                            <div class="footer-tel">
+                                <a href="tel:+13115552368">(311) 555-2368</a>
+                            </div>                            
+                            </address>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <h2>О нас</h2>
+                    <div>
+                        Тут потом будет описание какой крутой у нас магазине и чем он вообще занимается :^)
+                    </div>
+                    <div class=footer_social_media>
+                        <ul class="social_media_list">
+                            <li class="pinterest">
+                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/pinterest.png"></a></div>   
+                            </li>
+                            <li class="telegram"><a href="sdf">
+                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/telegram.png"></a></div>   
+                            </li>
+                            <li class="youtube">
+                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/youtube.png"></a></div>   
+                            </li>
+                            <li class="tiktok"><a href="sdf">
+                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/tiktok.png"></a></div>   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          
+        </footer>
+    </div>
+  
 </body>
 
 </html>

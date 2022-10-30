@@ -3,16 +3,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,300;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
-body {
-    background-color: var(--main-dark-color);
-}
-
+/*основные цвета сайта*/
 :root {
-    /*основные цвета сайта*/
     --main-dark-color: rgb(35, 33, 42);
     --main-color: #dc5b7d;
     --main-background-color: rgb(232, 232, 233);;
 } 
+
+
+body {
+    background-color: var(--main-dark-color);
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+footer, .header-top {
+    box-shadow: 8px 2px 10px rgba(20, 2, 38, 0.34);
+}
 /*---------------------------------ШАПКА--------------------------------*/
 .header-top {
     position: fixed; /*меню будет всегда завфиксировано сверху*/
@@ -98,7 +114,7 @@ body {
     text-shadow: 0px 1px 3px rgb(228, 228, 228);
     letter-spacing: 0.4px;
 }
-.header-logo { /*стиль логотипа*/
+.logo { /*стиль логотипа*/
     flex-grow: 0.2;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -107,7 +123,7 @@ body {
     letter-spacing: 5px;
     transition: .4S;
 }
-.header-logo:hover {
+.logo:hover {
     transform: scale(110%);
 }
 .actions_location::before { /*иконка локации*/
@@ -161,3 +177,178 @@ body {
     font-size: 140%;
 }
 
+/********************подвал сайта********************/
+footer {
+    left: 0;
+    bottom: 0;
+    font-family: 'Comfortaa';
+    color: white;
+    background-color: var(--main-dark-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+}
+.footer_container {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+address {
+    font-style: normal;
+}
+.footer_contacts {
+    min-width: 280px;
+}
+.footer-menu{
+    min-width: 210px;
+    border-right: 1px solid rgba(250, 250, 250, 0.075); 
+}
+.footer a{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+.footer_menu_list a::before{ /*иконка сердца*/
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--main-color);
+    margin-right: 8px;
+    font-size: 17px;
+    transition: .3s;
+}
+.footer_menu_list a:hover::before{
+    color: #ef7495;
+    text-shadow: 1px 1px 10px rgba(226, 131, 177, 0.721);
+}
+.social_media_list img{
+    width: 32px;
+    padding: 5px;
+}
+.social_media_list li{
+    position: relative;
+    margin-top: 10px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+}
+.social_media {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    margin: auto;
+    z-index: 100;
+}
+.social_media_back::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--main-color), rgb(179, 115, 216));
+    transition: .5s;
+    z-index: 8;
+}
+.social_media_back::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(215, 204, 204, 0.1);
+    transition: .5s;
+    z-index: 7;
+}
+.footer_info li:hover .social_media_back::after{
+    top: 0%;
+}
+.footer_info >div{
+    display: flex;
+}
+.footer h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.footer_contacts div{
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.footer-location::after,
+.footer-email::after,
+.footer-tel::after
+{
+    content: "";
+    position: absolute; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 18px;
+    left: -30px;
+    width: 28px;
+    height: 28px;
+    top: 0%;
+    border-radius: 50%;
+}
+.footer-location::after {
+    background-image: url("img/map.png");
+}
+.footer-tel::after {
+    background-image: url("img/phone.png");
+}
+.footer-email::after {
+    background-image: url("img/email.png");
+}
+@media (max-width:1010px){
+
+    .footer_container {
+        flex-direction:column;
+    }
+    .footer h2 {
+        text-align: center;
+    }
+    .footer ul{
+        justify-content: center ;
+        text-align: center;
+    }
+    .footer li{
+        margin-right: 18px;
+    }
+    .footer_contacts {
+        line-height: 1.5em;
+        text-align: center;
+        background-color: #dc5b7d;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .footer_contacts div::after{
+        visibility: hidden;
+    }
+    .footer-menu {
+        border-right: none;
+    }
+    .footer-menu li{
+        display: inline;
+    }
+    .footer_info {
+        text-align: center;
+    }
+    .footer_social_media{
+        justify-content: center;
+    }
+}
