@@ -205,12 +205,14 @@ address {
 }
 .footer-menu{
     min-width: 210px;
-    border-right: 1px solid rgba(250, 250, 250, 0.075); 
+    border-right: 1px solid rgba(250, 250, 250, 0.075); /*линия справа*/
+}
+.footer-menu a{
+    line-height: 25px;
 }
 .footer a{
     color: white;
     text-align: center;
-    line-height: 25px;
 }
 .footer_menu_list a::before{ /*иконка сердца*/
     content: "\f004";
@@ -279,20 +281,23 @@ address {
     top: 0%;
 }
 .footer_info >div{
+    line-height: 1.5em;
     display: flex;
 }
 .footer h2{
     font-size: 24px;
     margin-bottom: 10px;
 }
-.footer_contacts div{
-    position: relative;
+.footer_contacts p,
+.footer_contacts a{
     margin-left: 20px;
-    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+    line-height: 28px;
 }
-.footer-location::after,
-.footer-email::after,
-.footer-tel::after
+.footer-location p::after,
+.footer-email a::after,
+.footer-tel a::after
 {
     content: "";
     position: absolute; 
@@ -303,15 +308,14 @@ address {
     width: 28px;
     height: 28px;
     top: 0%;
-    border-radius: 50%;
 }
-.footer-location::after {
+.footer-location p::after {
     background-image: url("img/map.png");
 }
-.footer-tel::after {
+.footer-tel a::after {
     background-image: url("img/phone.png");
 }
-.footer-email::after {
+.footer-email a::after {
     background-image: url("img/email.png");
 }
 @media (max-width:1010px){
@@ -330,7 +334,6 @@ address {
         margin-right: 18px;
     }
     .footer_contacts {
-        line-height: 1.5em;
         text-align: center;
         background-color: #dc5b7d;
         border-radius: 15px;
@@ -343,7 +346,7 @@ address {
         border-right: none;
     }
     .footer-menu li{
-        display: inline;
+        display: inline-block;
     }
     .footer_info {
         text-align: center;

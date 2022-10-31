@@ -9,9 +9,23 @@ main {
     margin: auto;
 }
 .registration_block {
-    background: linear-gradient(to right, rgb(88, 115, 181), rgb(242, 163, 176));
     padding: 120px 20px;
     height: 100%;
+  	background: linear-gradient(-45deg, #e8d65e, #bc60b1, #5b92c8, #86d3b2);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .registration_container{
     max-width: 600px;
@@ -21,21 +35,17 @@ main {
     position: relative;
     max-width: 100%;
     background-color: rgb(232, 232, 233);
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.082);
+    box-shadow: 5px 10px 15px rgba(123, 12, 150, 0.082);
     margin: auto;
     border-radius: 15px;
     padding: 30px;
     z-index: 3;
     transition: ease 1s;
 }
-.registration:hover{
-    scale:105%;
-    box-shadow: 6px 6px 15px rgba(20, 16, 31, 0.258);
-}
 .registration_form {
-      position: relative;
+    position: relative;
     max-width: 700px;
-    background-color: rgb(133, 48, 48);
+
     margin: auto;
     border-radius: 15px;
     padding: 20px;
@@ -62,21 +72,42 @@ main {
     justify-content: space-between;
 }
 .user-details .input-box{
-    margin: 15px 10px 0;
+    margin: 15px auto;
     width: calc(100% / 2 - 25px);
-   
 }
+
 .user-details .input-box input{
     width: 100%;
     height: 45px;
     border: 1px solid rgb(186, 186, 186);
+    border-bottom-width: 2px;
     padding: 3px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
 }
-.registration_btn{
-    width: calc(100% - 20px*2);
-    
+.user-details .input-box input:focus{
+  border-color:  rgb(195, 129, 210);
+}
+form .button{
+  height: 45px;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+}
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+  background: linear-gradient(-135deg, #e8d65e, #bc60b1, #5b92c8, #86d3b2);
+	background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+form .button input:active{
+  opacity: 90%;
 }
 @keyframes floating_figures {
     from, to {
@@ -171,7 +202,7 @@ main {
   margin-bottom: 25px;
 }
 .cards_container h1{
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 .cards_items {
@@ -183,7 +214,7 @@ main {
 .box{
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 430px;
   box-shadow: 0 8px 32px 0 rgba(30, 3, 44, 0.37);
   overflow: hidden;
   border-radius: 15px;
@@ -211,16 +242,16 @@ main {
   flex-wrap: wrap;
 }
 .card_item h2{
-  font-size: 25px;
+  font-size: 24px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
 }
 .card_item img{
   position: absolute;
   width: 75%;
   -webkit-filter: drop-shadow(3px 5px 5px #000);
   filter: drop-shadow(3px 5px 5px rgba(42, 5, 38, 0.267));
-  padding: 10px;
+  padding: 14px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -229,10 +260,10 @@ main {
 .card_details { /*текст карточки*/
   position: absolute;
   text-align: center;
-  font-size: 18px;
- 
+  font-size: 16px;
+  line-height: 1.5em;
   bottom: 0;
-  padding: 15px;
+  padding: 26px 12px;
 }
 .box::before{ /***анимированная рамка***/
   content: "";
@@ -267,3 +298,11 @@ main {
     rotate: 360deg;
   }
 }
+@media (max-width: 612px){
+  .user-details .input-box{
+    margin-bottom: 0px;
+    width: calc(100% - 20px);
+}
+}
+
+
