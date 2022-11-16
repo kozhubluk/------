@@ -203,6 +203,7 @@ form .button input:active{
 }
 .cards_container h1{
     font-size: 28px;
+    font-weight: bolder;
     margin-bottom: 20px;
 }
 .cards_items {
