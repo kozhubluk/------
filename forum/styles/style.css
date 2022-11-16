@@ -7,14 +7,19 @@
     color: white;
     font-family: "Comfortaa";
     padding-top: 10px;
+    line-height: 1.5em;
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
  }
  
  h1{
     font-size: 28px;
+    line-height: 1.1em;
     margin-bottom: 20px;
     font-weight: bolder;
+ }
+ h2, h3{
+   font-size: 24px;
  }
 
  h1 span{
@@ -25,17 +30,16 @@
     width: 100%;
     display: flex;
     margin: auto;
-    line-height: 1.5em;
     border-radius: 8px;
-    font-size: 17px;
     color: rgb(35, 33, 42);
     background-color:  rgb(232, 232, 233);
     box-shadow:   rgba(0, 0, 0, 0.403) 8px 8px 10px;
  }
  .descripion_block h2{
-    font-weight: bolder;
-    font-size: 20px;
-    margin-bottom: 10px;
+   text-align: start;
+   line-height: 1.2em;
+   font-weight: bolder;
+   margin-bottom: 10px;
  }
  .description_block_container {
     display: flex;
@@ -141,7 +145,6 @@
    text-align: center;
 }
 .left_questions_form h3{
-   font-size: 30px;
    margin-bottom: 15px;
 }
 .left_questions_form a,p{
@@ -170,7 +173,6 @@
    margin-bottom: 20px;
 }
 .left_questions_form a{
-   font-size: 18px;
    line-height: 1.5em;
    color: #dc5b7d;
    font-weight: bolder;
@@ -196,7 +198,7 @@
    margin-top: 150px;
    margin-bottom: 10px;
    font-weight:bolder;
-   font-size: 32px;
+   font-size: 24px;
    text-align: center;
 }
 .right_questions_form button{
@@ -219,8 +221,9 @@
 .email_form {
    margin-top: 18px;
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
-   gap: 20px;
+   gap: 10px;
 }
  @media (max-width:767px) {
    .description_block_container{
@@ -234,7 +237,22 @@
       row-gap: 20px;
    }
 }
-input.validate{
-   background-color:transparent;
-   color: rgb(158, 44, 44);
- }
+@media (max-width:425px) {
+   .right_questions_form{
+      padding: 10px;
+   }
+   .description_block_container{
+      padding: 20px;
+   }
+   .questions_form h3{
+      font-size: 18px;
+   }
+}
+@media (max-width:320px) {
+   .main_container{
+      font-size: 14px;
+   }
+   h1, h2, h3{
+      font-size: 18px;
+   }
+}
