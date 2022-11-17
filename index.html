@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -8,10 +9,13 @@
     <link rel="stylesheet" href="null-style.css">
     <link rel="stylesheet" href="main_page/styles/style.css">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="./main_page/slider.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
+     
     <div class="wrapper">
         <header class="header">
             <div class="header-top">
@@ -54,49 +58,100 @@
            
         </header>
         <main class="main">
-            <div class="main_container">
-                <div class="container">
-                    <div class="box">
-                      <span></span>
-                      <div class="content">
-                        <h2>Акции по выходным!</h2>
-                        <p>В выходные дни в наших магазинах действует скидка 20% на любые виды товаров</p>
-                      </div>
-                    </div>
-                    <div class="box">
-                      <span></span>
-                      <div class="content">
-                        <h2>Отметьте свой праздник!</h2>
-                        <p>В день рождения при покупки от 500 рублей дарим имениннику сладкий подарок.</p>
-                      </div>
-                    </div>
-                    <div class="box">
-                      <span></span>
-                      <div class="content">
-                        <h2>Бесплатная доставка</h2>
-                        <p>Если в вашем городе нет наших магазинов, мы можете офромить заказ на сайте. При покупки от 1000 рублей бесплатная доставка по всей России.</p>
-                      </div>
-                    </div>
-                  </div>
+            
+            <div class="carousel_wrapper">
+                <i id="left" class="fa-solid fa-arrow-left"></i>
+                <div class="carousel">
+                        <div class="review_item" style="--color: linear-gradient(328deg, rgba(233,242,216,1) 14%, rgba(175,210,192,1) 74%)">
+                            <img src="./main_page/img/EugeniaTarakanova_user.jpg" class="user_avatar">
+                            <div class="review_container">
+                                <h3>Евгения Тараканова</h3>
+                                <p class="review_text">
+                                    Замечательная доставка! По праздникам достаточно часто заказываю здесь друзьям и родственниам подарочные наборы. Доставляют всегда вовремя, ни разу не подводили!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review_item" style="--color: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)">
+                            <img src="./main_page/img/AnnaKruglik_user.jpg" class="user_avatar">
+                            <div class="review_container" >
+                                <h3>Anna Kruglik</h3>
+                                <p class="review_text">
+                                    Лучшая доставка сладостей из всех известных мне! Также у компании имеется уютный магазинчик в Москве рядом с моей любимой станцией метро Парк Культуры. Часто захожу туда, чтобы закупиться вкусностями!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review_item" style="--color: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%)">
+                            <img src="./main_page/img/Alsu_user.jpg" class="user_avatar">
+                            <div class="review_container">
+                                <h3>Алина Букварь</h3>
+                                <p class="review_text">
+                                    Хорошая доставка. 10/10, все круто, четко, быстро и вкусно. Отдельное спасибо менеджеру Елене, которая помогла решить проблему, возникшую с заказом.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review_item" style="--color:linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%)">
+                            <img src="./main_page/img/Alla_user.jpg" class="user_avatar">
+                            <div class="review_container" >
+                                <h3>Алла Алекперова</h3>
+                                <p class="review_text">
+                                    Редко здесь бываю. Но если нахожусь поблизости никогда не могу пройти мимо. Сам магазин небольшой, но выбор товаров поражает разнообразием. Люблю брать здесь мармелад на развес, лимонад "Натахтари" и вкуснейший в Москве рахат-лукум. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review_item" style="--color: Z #FBAB7E;
+                        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)">
+                            <img src="./main_page/img/Daria_user.jpg" class="user_avatar">
+                            <div class="review_container" >
+                                <h3>Дарья</h3>
+                                <p class="review_text">
+                                    В поиске хорошего магазина сладостей наткнулась на SeetLand и не пожалела. Упаковано очень хорошо, вместе со сладостями был небольшой подарочек и милейшее письмо
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review_item" style="--color:#8BC6EC;
+                        background-image: linear-gradient(90deg, #8BC6EC 0%, #8386dd 100%)">
+                            <img src="./main_page/img/DenisPetrenko_user.jpg" class="user_avatar">
+                            <div class="review_container" >
+                                <h3>Денис Петренко</h3>
+                                <p class="review_text">
+                                    Заказал впервые, так сказать на пробу. Доставили быстро, товар соответствует описанию. Дали скидку. Хороший магазин.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review_item" style="--color:#8BC6EC;
+                        background-image: linear-gradient(90deg, #8BC6EC 0%, #8386dd 100%)">
+                            <img src="./main_page/img/DenisPetrenko_user.jpg" class="user_avatar">
+                            <div class="review_container" >
+                                <h3>Денис Петренко</h3>
+                                <p class="review_text">
+                                    Заказал впервые, так сказать на пробу. Доставили быстро, товар соответствует описанию. Дали скидку. Хороший магазин.
+                                </p>
+                            </div>
+                        </div>
+                  
+                        <div class="review_item" style="--color:#8BC6EC;
+                        background-image: linear-gradient(90deg, #8BC6EC 0%, #8386dd 100%)">
+                            <img src="./main_page/img/DenisPetrenko_user.jpg" class="user_avatar">
+                            <div class="review_container" >
+                                <h3>Денис Петренко</h3>
+                                <p class="review_text">
+                                    Заказал впервые, так сказать на пробу. Доставили быстро, товар соответствует описанию. Дали скидку. Хороший магазин.
+                                </p>
+                            </div>
+                        </div>
+                  
+                  
+                </div>
+                <i id="right" class="fa-solid fa-arrow-right"></i>
+
             </div>
-            <h2>Товары представленные в магазине</h2>
-            <div class="text_cards">
-                <div class="card_box">
-                    <h2>Конфеты</h2>
-                    <div class="text_content">Конфеты Dushike со вкусом лайма 24 гр. (Китай)</div>
-                </div>
-                <div class="card_box">
-                    <h2>Мармелад</h2>
-                    <div class="text_content">Мармелад жевательный из Европы Палочки гигантские разноцветные в сахарной обсыпке с синей</div>
-                </div>
-                <div class="card_box">
-                    <h2>Трубочки с шоколадом</h2>
-                    <div class="text_content">Вафельные трубочки Solen Biscolata Roll с тёмным шоколадом,</div>
-                </div>
-            </div>
-            </main>
+           
+           
+           
+            
         </main>
         <footer class="footer">
+           
             <div class="footer_container">
                 <div class="footer-menu">
                     <div class="footer_menu">

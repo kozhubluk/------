@@ -152,6 +152,10 @@ table tbody tr:nth-child(odd) {
   bottom:0;
   margin-bottom: 20px;
 }
+.dance{
+  float: right;
+  height: 200px;
+}
 .card_item img{
   display: block;
   width: 60%;
@@ -202,3 +206,5 @@ table tbody tr:nth-child(odd) {
     font-size: 16px;
   }
 }
+
+
