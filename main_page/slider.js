@@ -3,7 +3,7 @@ firstImg = carousel.querySelectorAll(".review_item")[0];
 arrowIcons = document.querySelectorAll(".carousel_wrapper i");
 
 let isDragStart = false, prevPageX, prevScrollLeft;
-let firstImgWidth = firstImg.clientWidth + 14;
+let firstImgWidth = firstImg.clientWidth;
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth; 
