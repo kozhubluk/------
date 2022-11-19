@@ -262,9 +262,8 @@ grid-column: span 2;
   border-radius: 50%;
 }
 .shop_info{
-  border-radius: 15px;
-  overflow: hidden;
   max-width: 1200px;
+  padding: 15px;
   margin: auto;
   display: grid;
   grid-template-columns: 60% 1fr;
@@ -272,14 +271,13 @@ grid-column: span 2;
 }
 .advantages{
    height: 100%;
-   background-color: #6b44c1;
-  
 }
 .advantages_content{
+  border-radius: 15px 0 0 15px;
   background-color: white;
   height: 100%;
   color: black;
-  padding: 10px;
+  padding: 20px;
 }
 .advantages_content dt{
   color: #3b2a6c;
@@ -293,15 +291,15 @@ grid-column: span 2;
   position: relative;
   font-size: 16px;
   line-height: 1.3em;
+  border-radius: 0 15px 15px 0;
   background-color: #8BC6EC;
-background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   padding: 10px;
   padding-left: 30px;
 
 }
 .address_panel img{
   position: absolute;
-
   left:0;
   right: 0;
   top: 15px;
@@ -311,8 +309,7 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   width: 200px;
 }
 .address_list{
- 
- 
+  width: fit-content;
   margin: auto;
   margin-top: 200px;
 }
@@ -329,6 +326,10 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   font-size: 115%;
   font-weight: bold;
 }
+
+
+
+
 @media (max-width: 900px){
   .category_banner_content{
     flex-direction: column;
@@ -359,6 +360,26 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   .horizontal {
     grid-column: span 1;
   }
+  .shop_info{
+    grid-template-columns: 1fr;
+  }
+  .advantages_content{
+    border-radius: 15px 15px 0 0;
+  }
+  .address_panel{
+    padding-bottom: 20px;
+    border-radius: 0 0px 15px 15px;
+  }
+  .address_panel img{
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 15px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+}
 }
 @media (max-width: 500px) {
   .review_item{
@@ -367,5 +388,6 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   .shop_description p{
     text-align: start;
   }
+  
 }
 
