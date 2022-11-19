@@ -1,0 +1,44 @@
+@import url(../../header-footer.css);
+.main{
+    font-family: "Comfortaa";
+    font-size: 18px;
+    line-height: 1.5em;
+    color: white;
+  }
+h1{
+    font-size: 28px;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+    font-weight: bolder;
+ }
+ h2, h3{
+  font-size: 24px;
+ }
+ .ad{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+ }
+ .ad_catalog{
+    border-radius: 5px;
+    position: relative;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    padding: 10px;
+ }
+ .ad_content{
+    position: relative;
+    border: solid 2px rgba(255, 255, 255, 0.464);
+    padding: 5px;
+    border-radius: 5px;
+ }
+ .hide_ad{
+    position: absolute;
+    right:10px;
+    top:10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+ }
+ 

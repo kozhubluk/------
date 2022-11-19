@@ -330,6 +330,103 @@ grid-column: span 2;
 
 
 
+.questions_form{ /*форма чтобы задать вопрос*/
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 38% 1fr;
+}
+.left_questions_form{
+  padding: 10px;
+  font-size: 16px;
+  align-self: center;
+  text-align: center;
+}
+.left_questions_form h3{
+  margin-bottom: 15px;
+}
+.left_questions_form a,p{
+  position: relative;
+}
+.question_email::before{
+  position: absolute; 
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: -24px; 
+  font-size: 100%;
+}
+.question_number::before{
+
+  position: absolute; 
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: -24px; 
+  font-size: 100%;
+  
+}
+.left_questions_form p{
+  line-height: 1.8em;
+  margin-bottom: 20px;
+}
+.left_questions_form a{
+  line-height: 1.5em;
+  color: #dc5b7d;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.right_questions_form{
+  padding: 10px;   position: relative;
+  color: rgb(27, 22, 24);
+  background-color: rgb(232, 232, 233);
+  padding: 25px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 40px 0px 40px 0px ;
+}
+.right_questions_form img { /*рисунок конверта*/
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.right_questions_form h3 {
+  color: #dc5b7d;
+  margin-top: 150px;
+  margin-bottom: 10px;
+  font-weight:bolder;
+  font-size: 24px;
+  text-align: center;
+}
+.right_questions_form button{
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  background-color: #e16385;
+}
+.right_questions_form input{
+  border-radius: 30px;
+  box-shadow: inset 20px 20px 0px 20px #ebc7d1;
+  padding: 10px;
+  color: white;
+  background-color: #ebc7d1;
+}
+.right_questions_form input::placeholder{
+  color: white;
+}
+
+.email_form {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+
 @media (max-width: 900px){
   .category_banner_content{
     flex-direction: column;
@@ -380,6 +477,10 @@ grid-column: span 2;
   display: inline-block;
   width: 200px;
 }
+.questions_form{
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
 }
 @media (max-width: 500px) {
   .review_item{
@@ -388,6 +489,8 @@ grid-column: span 2;
   .shop_description p{
     text-align: start;
   }
-  
+  .right_questions_form{
+    padding: 10px;
+ }
 }
 
