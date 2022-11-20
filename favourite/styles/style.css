@@ -4,7 +4,13 @@
     font-size: 18px;
     line-height: 1.5em;
     color: white;
+  
   }
+.favourite_content{
+    max-width: 1200px;
+    padding: 15px;
+    margin: auto;
+}
 h1{
     font-size: 28px;
     line-height: 1.1em;
@@ -84,6 +90,7 @@ h1{
     height: 100%;
  }
  .catalog_card{
+    position: relative;
     height: 100%;
     background-color: rgba(70, 52, 86, 0.126);
     border-radius: 15px;
@@ -91,6 +98,9 @@ h1{
  }
  .catalog_card:hover{
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.126);
+ }
+ .catalog_card:hover .remove{
+    visibility: visible;
  }
  .card_picture{
     width: 100%;
@@ -100,6 +110,24 @@ h1{
     border-radius: 15px;
     position: relative;
  }
+.catalog_item .remove{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    color: #656565;
+    border-radius: 50%;
+    font-size: 18px;
+    visibility: hidden;
+    z-index: 9;
+    transition: all .2s;
+}
+.remove:hover{
+    background-color: #d45678;
+    color: white;
+}
 
  .cards_container img{
     position: absolute;
@@ -144,6 +172,7 @@ h1{
  }
  button.add_to_cart{
     margin-right: 10px;
+    color: white;
     background-color: #FF6A88;
     padding: 5px;
     border-radius: 5px;

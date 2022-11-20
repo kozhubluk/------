@@ -3,8 +3,7 @@ const heart = document.querySelectorAll('.add_to_fav');
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click', function() {
    if (this.innerHTML === "В корзине"){
-      this.innerHTML = "В корзину";
-      this.classList.remove("active");
+      window.open('./cart.html');
    }
    else{
       this.innerHTML = "В корзине";
