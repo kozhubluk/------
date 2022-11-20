@@ -9,6 +9,8 @@ for (let i = 0; i < cross.length; i++) {
         while (crossClicked.className != "catalog_item") { // получаем родительский элемент, который надо удалить
             crossClicked = crossClicked.parentElement;
         }
+        //let login = confirm("Вы уверены, что хотите удалить товар из корзины?"); // модальное окно с кнопками ок и отмена
+        //if(!login) return;
         crossClicked.remove();
         updateTotal();      
     })
