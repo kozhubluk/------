@@ -12,7 +12,7 @@ for (let i = 0; i < cross.length; i++) {
         crossClicked.remove();
         updateTotal();      
     })
-}
+} 
 for (let i = 0; i < minusButtons.length; i++) {
     minusButtons[i].addEventListener('click', function(){
         var quantity = minusButtons[i].parentElement.getElementsByClassName("counter")[0];
