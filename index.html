@@ -10,16 +10,20 @@
     <link rel="stylesheet" href="main_page/styles/style.css">
     <meta name="viewport" content="width=device-width">
     <script src="./main_page/slider.js" defer></script>
+    <script src="./main_page/cards.js" defer></script>
+   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-     
+  top_menu
     <div class="wrapper">
+    
         <header class="header">
             <div class="header-top">
                 <div class="header-top_container">
+                    <button type="button" class="icon-menu" id="burger"><span></span></button>
                     <div class="header-top_menu">
                         <nav class="menu_body">
                             <ul class="menu_list">
@@ -31,8 +35,15 @@
                             </ul>
                         </nav>
                     </div>
-                    <a href="" class="header-top-user">Личныйкабинет</a>
-                    <button type="button" class="icon-menu"><span>ddd</span></button>
+                    <div class="header-top_actions">
+                        <a href="#"  class="actions_fav"></a>
+                        <a href="#" class="actions_cart"></a>
+                        <a class="user"><i class="fa-solid fa-user"></i><p class="header-top-user">Личный кабинет</p></a>
+                    </div>
+                   
+                    
+                    
+                   
                 </div>
             </div>
             <div class="header-body">
@@ -46,11 +57,11 @@
                     </div>
                     <div class="header-body_actions">
                         <a href="#" class="actions_location">Москва</a>
-                        <div class="actions_phone">
+                        <div data-da="header-top_container" class="actions_phone">
                             <p class="phone_call">Позвоните нам!</p>
                             <a href=”tel:89207662452” class="phone-num">+7(920)766-24-52</a>
                         </div>
-                        <a href="#" class="actions_fav"></a>
+                        <a href="#"  class="actions_fav"></a>
                         <a href="#" class="actions_cart"></a>
                     </div>
                 </div>
@@ -388,7 +399,9 @@
             </div>
           
         </footer>
-    </div> 
+    </div>
+    <script src="./js/burger.js"></script> 
 </body>
+
 
 </html>
