@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -9,17 +8,11 @@
     <link rel="stylesheet" href="null-style.css">
     <link rel="stylesheet" href="main_page/styles/style.css">
     <meta name="viewport" content="width=device-width">
-    <script src="./main_page/slider.js" defer></script>
-    <script src="./main_page/cards.js" defer></script>
-   
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-  top_menu
     <div class="wrapper">
-    
         <header class="header">
             <div class="header-top">
                 <div class="header-top_container">
@@ -27,32 +20,31 @@
                     <div class="header-top_menu">
                         <nav class="menu_body">
                             <ul class="menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Оплата и доставка</a>
+                                </li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header-top_actions">
-                        <a href="#"  class="actions_fav"></a>
-                        <a href="#" class="actions_cart"></a>
-                        <a class="user"><i class="fa-solid fa-user"></i><p class="header-top-user">Личный кабинет</p></a>
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
+                        <a class="user" href="./registration.html"><i class="fa-solid fa-user"></i>
+                            <p class="header-top-user">Личный кабинет</p>
+                        </a>
                     </div>
-                   
-                    
-                    
-                   
                 </div>
             </div>
             <div class="header-body">
                 <div class="header-body_container">
-                    <a class="header-logo">SweetLand</a>
+                    <a class="header-logo" href="./index.html">SweetLand</a>
                     <div class="header-body_search">
                         <form action="#" class="search">
                             <button type="submit" class="header-search_button"></button>
-                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="header-search_input" placeholder="">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                class="header-search_input" placeholder="">
                         </form>
                     </div>
                     <div class="header-body_actions">
@@ -61,35 +53,34 @@
                             <p class="phone_call">Позвоните нам!</p>
                             <a href=”tel:89207662452” class="phone-num">+7(920)766-24-52</a>
                         </div>
-                        <a href="#"  class="actions_fav"></a>
-                        <a href="#" class="actions_cart"></a>
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
                     </div>
                 </div>
             </div>
-           
         </header>
-        
         <main class="main">
-         
             <div class="category_banner">
                 <div class="category_banner_content">
                     <div class="our_work">
                         <h1>SweetLand - магазин сладостей</h1>
-                        <p> SweetLand — уникальный магазин сладостей и напитков.только!
-                            Мы подобрали самые интересные решения для подарков на лютимся о качестве нашей продукции, мы постоянно расширяем наш ассортимент и ищем новых поставщиков самых удивительных сладких товаров.
-                            Мы сделали наш магазин максимально удобным для Вас. Широчайший </p>
+                        <p> SweetLand — уникальный магазин сладостей и напитков. Наш магазин - это целый мир сочных
+                            сладостей и напитков, конфет, чипсов и других лакомств с лимитированными и необычными
+                            вкусами.
+                            Мы поможем доставить сладости до вашего города, квартиры или пункта выдачи заказов.
+                        </p>
                     </div>
                     <div class="category_list">
                         <div class="category_item">
-                            <img src="./main_page/img/classic.jpg">
+                            <img src="./main_page/img/classic.jpg" alt="сладости">
                             <h3>Классические<br> сладости</h3>
                         </div>
                         <div class="category_item">
-                            <img src="./main_page/img/diet.jpg">
+                            <img src="./main_page/img/diet.jpg" alt="сладости">
                             <h3>Диетические <br>десерты</h3>
                         </div>
                         <div class="category_item">
-                            <img src="./main_page/img/house.jpg">
+                            <img src="./main_page/img/house.jpg" alt="сладости">
                             <h3>Домашняя <br>выпечка</h3>
                         </div>
                     </div>
@@ -99,49 +90,49 @@
                 <h2>Доступные товары</h2>
                 <div class="catalog_container">
                     <div class="horizontal">
-                        <a href="/categories/marmelad">
+                        <a href="./catalog.html#marmelad">
                             <img src="./main_page/img/marmalade.png" alt="Мармелад" />
                             <p class="category-name">Желе и мармелад</p>
                             <span>Выбрать</span>
                         </a>
                     </div>
                     <div>
-                        <a href="/categories/napitki">
+                        <a href="./catalog.html#drinks">
                             <img src="./main_page/img/milk.png" alt="Напитки" />
                             <p class="category-name">Напитки</p>
                             <span>Выбрать</span>
                         </a>
                     </div>
                     <div>
-                        <a href="/categories/pechenki">
+                        <a href="./catalog.html#cookie">
                             <img src="./main_page/img/oreo.png" alt="Печеньки" />
                             <p class="category-name">Печенье</p>
                             <span>Выбрать</span>
                         </a>
                     </div>
                     <div class="horizontal">
-                        <a href="/categories/sladosti">
+                        <a href="./catalog.html#sweets">
                             <img src="./main_page/img/candy.png" alt="Сладости" />
                             <p class="category-name">Конфеты</p>
                             <span>Выбрать</span>
                         </a>
                     </div>
                     <div>
-                        <a href="/categories/shokolad">
+                        <a href="./catalog.html#chocolate">
                             <img src="./main_page/img/rs.png" alt="Шоколад" />
                             <p class="category-name">Шоколад</p>
                             <span>Выбрать</span>
                         </a>
                     </div>
                     <div>
-                        <a href="/categories/antisladosti">
+                        <a href="./catalog.html#ice-cream">
                             <img src="./main_page/img/ice.png" alt="Выпечка" />
                             <p class="category-name">Мороженое</p>
                             <span>Выбрать</span>
                         </a>
                     </div>
                     <div>
-                        <a href="/categories/podarki">
+                        <a href="./catalog.html#cake">
                             <img src="./main_page/img/cake.png" alt="Торт" />
                             <p class="category-name">Торты</p>
                             <span>Выбрать</span>
@@ -150,52 +141,54 @@
                 </div>
             </section>
             <div class="shops_list">
-
             </div>
             <div class="shop_info">
                 <section class="advantages">
                     <div class="advantages_content">
                         <h3>Почему сладости стоит покупать именно у нас?</h3>
-                    <dl>
-                        <!-- список описаний -->
-                        <dt>Быстрая и удобная доставка</dt> <!-- термин -->
-                        <dd><em>95%</em> всех заказов приходят нашим покупателям в течение трех дней. Мы работаем над тем, чтобы
-                            сделать
-                            нашу доставку еще быстрее.</dd> <!-- описание термина -->
-                        <!-- альтернативное описание -->
-                        <dd>Доставка осуществляется <a href="https://boxberry.ru/">Boxberry</a>, <a
-                                href="https://www.cdek.ru/ru">ТК
-                                СДЭК</a>, а также Почта РФ</dd> <!-- ссылки на внешние ресурсы -->
-                        <dt>Большой выбор</dt>
-                        <dd>У нас более 600 наименований сладостей, но мы всегда ищем новинки и интересные сладости, регулярно пополняем ассортимент.</dd>
-                        <dt>Гарантия качества</dt>
-                        <dd>Известные производители. Все сладости имеют необходимые сертификаты. В наших магазинах соблюдены все
-                            требования <abbr
-                                title="Федеральная служба по надзору в сфере защиты прав потребителей и благополучия человека">
-                                Роспотребнадзора.</abbr></dd> <!-- определение аббревиатуры -->
-                        <!-- альтернативное описание -->
-                    
-                        <dt>Акции и скидки</dt>
-                        <dd> У нас действует накопительная система скидок, которая позволяет Вам экономить больше и больше с
-                            каждой
-                            покупкой.</dd>
-                        <dt>Бесплатная доставка</dt>
-                        <dd>При заказе от <em>3500 рублей</em> у нас действует бесплатная доставка по России.</dd>
-                    </dl>
+                        <dl>
+                            <!-- список описаний -->
+                            <dt>Быстрая и удобная доставка</dt> <!-- термин -->
+                            <dd><em>95%</em> всех заказов приходят нашим покупателям в течение трех дней. Мы работаем
+                                над тем, чтобы
+                                сделать
+                                нашу доставку еще быстрее.</dd> <!-- описание термина -->
+                            <!-- альтернативное описание -->
+                            <dd>Доставка осуществляется <a href="https://boxberry.ru/">Boxberry</a>, <a
+                                    href="https://www.cdek.ru/ru">ТК
+                                    СДЭК</a>, а также Почта РФ</dd> <!-- ссылки на внешние ресурсы -->
+                            <dt>Большой выбор</dt>
+                            <dd>У нас более 600 наименований сладостей, но мы всегда ищем новинки и интересные сладости,
+                                регулярно пополняем ассортимент.</dd>
+                            <dt>Гарантия качества</dt>
+                            <dd>Известные производители. Все сладости имеют необходимые сертификаты. В наших магазинах
+                                соблюдены все
+                                требования <abbr
+                                    title="Федеральная служба по надзору в сфере защиты прав потребителей и благополучия человека">
+                                    Роспотребнадзора.</abbr></dd> <!-- определение аббревиатуры -->
+                            <!-- альтернативное описание -->
+
+                            <dt>Акции и скидки</dt>
+                            <dd> У нас действует накопительная система скидок, которая позволяет Вам экономить больше и
+                                больше с
+                                каждой
+                                покупкой.</dd>
+                            <dt>Бесплатная доставка</dt>
+                            <dd>При заказе от <em>3500 рублей</em> у нас действует бесплатная доставка по России.</dd>
+                        </dl>
                     </div>
                 </section>
                 <div class="address_panel">
-                    <img src="./main_page/img/dancing_stich.gif">
+                    <img src="./main_page/img/dancing_stich.gif" alt="Не удалось загрузить изображение">
                     <div class="address_list">
                         <h2>Наши магазины</h2>
                         <ol>
                             <li>Москва</li>
                             <ul>
-                                <li>Малая Калужская ул., д.15, стр.17</li>
+                                <li>ул. Льва Толстого, 16</li>
                                 <li>Театральный пр-д, 5</li>
                                 <li>Лесная ул., 20, стр. 3</li>
                                 <li>Большой Овчинниковский пер., 16</li>
-                                
                             </ul>
                             <li>Екатеринбург</li>
                             <ul class="shop_list">
@@ -214,146 +207,152 @@
                             </ul>
                         </ol>
                     </div>
-                </div>        
+                </div>
             </div>
-               
             <section class="review_block">
                 <h2>Отзывы покупателей</h2>
                 <div class="carousel_wrapper">
                     <i id="left" class="fa-solid fa-arrow-left"></i>
                     <div class="carousel">
-                        <div class="review_item">
-                            <div class="review_card" style="--color: linear-gradient(328deg, rgba(233,242,216,1) 14%, rgba(175,210,192,1) 74%)">
-                                <img src="./main_page/img/EugeniaTarakanova_user.jpg" class="user_avatar">
+                        <div class="review_item" draggable="false">
+                            <div class="review_card"
+                                style="--color: linear-gradient(328deg, rgba(233,242,216,1) 14%, rgba(175,210,192,1) 74%)">
+                                <img src="./main_page/img/EugeniaTarakanova_user.jpg" class="user_avatar" alt="Евгения">
                                 <div class="review_container">
                                     <h3>Евгения Тараканова</h3>
                                     <p class="review_text">
-                                        Замечательная доставка! По праздникам достаточно часто заказываю здесь друзьям и родственниам подарочные наборы. Доставляют всегда вовремя, ни разу не подводили!
+                                        Замечательная доставка! По праздникам достаточно часто заказываю здесь друзьям и
+                                        родственниам подарочные наборы. Доставляют всегда вовремя, ни разу не подводили!
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review_item">
+                        <div class="review_item" draggable="false">
                             <div class="review_card" style="--color: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)">
-                                <img src="./main_page/img/AnnaKruglik_user.jpg" class="user_avatar">
-                                <div class="review_container" >
+                                <img src="./main_page/img/AnnaKruglik_user.jpg" class="user_avatar" alt="Анна">
+                                <div class="review_container">
                                     <h3>Anna Kruglik</h3>
                                     <p class="review_text">
-                                        Лучшая доставка сладостей из всех известных мне! Также у компании имеется уютный магазинчик в Москве рядом с моей любимой станцией метро Парк Культуры. Часто захожу туда, чтобы закупиться вкусностями!
+                                        Лучшая доставка сладостей из всех известных мне! Также у компании имеется уютный
+                                        магазинчик в Москве рядом с моей любимой станцией метро Парк Культуры. Часто
+                                        захожу туда, чтобы закупиться вкусностями!
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review_item">
+                        <div class="review_item" draggable="false">
                             <div class="review_card" style="--color: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%)">
-                                <img src="./main_page/img/Alsu_user.jpg" class="user_avatar">
+                                <img src="./main_page/img/Alsu_user.jpg" class="user_avatar" alt="Алина">
                                 <div class="review_container">
                                     <h3>Алина Букварь</h3>
                                     <p class="review_text">
-                                        Хорошая доставка. 10/10, все круто, четко, быстро и вкусно. Отдельное спасибо менеджеру Елене, которая помогла решить проблему, возникшую с заказом.
+                                        Хорошая доставка. 10/10, все круто, четко, быстро и вкусно. Отдельное спасибо
+                                        менеджеру Елене, которая помогла решить проблему, возникшую с заказом.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review_item">
+                        <div class="review_item" draggable="false">
                             <div class="review_card" style="--color:linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)">
-                                <img src="./main_page/img/Victor_user.jpg" class="user_avatar">
-                                <div class="review_container" >
+                                <img src="./main_page/img/Victor_user.jpg" class="user_avatar" alt="Виктор">
+                                <div class="review_container">
                                     <h3>Тора Васильев</h3>
                                     <p class="review_text">
-                                        Шикарный магазин, люблю заходить сюда после пар и закупаться конфтами "Степ" и "Обыкновенное чудо" по акции. Хотелось бы побольше магазинов с такими же приятными ценами и качественными товарами.
+                                        Шикарный магазин, люблю заходить сюда после пар и закупаться конфтами "Степ" и
+                                        "Обыкновенное чудо" по акции. Хотелось бы побольше магазинов с такими же
+                                        приятными ценами и качественными товарами.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review_item">
-                            <div class="review_card" style="--color:linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%)">
-                                <img src="./main_page/img/Alla_user.jpg" class="user_avatar">
-                                <div class="review_container" >
+                        <div class="review_item" draggable="false">
+                            <div class="review_card"
+                                style="--color:linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%)">
+                                <img src="./main_page/img/Alla_user.jpg" class="user_avatar" alt="Алла">
+                                <div class="review_container">
                                     <h3>Алла Алекперова</h3>
                                     <p class="review_text">
-                                        Редко здесь бываю. Но если нахожусь поблизости никогда не могу пройти мимо. Сам магазин небольшой, но выбор товаров поражает разнообразием. Люблю брать здесь мармелад на развес, лимонад "Натахтари" и вкуснейший в Москве рахат-лукум. 
+                                        Редко здесь бываю. Но если нахожусь поблизости никогда не могу пройти мимо. Сам
+                                        магазин небольшой, но выбор товаров поражает разнообразием. Люблю брать здесь
+                                        мармелад на развес, лимонад "Натахтари" и вкуснейший в Москве рахат-лукум.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review_item">
+                        <div class="review_item" draggable="false">
                             <div class="review_card" style="--color:  linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)">
-                                <img src="./main_page/img/Daria_user.jpg" class="user_avatar">
-                                <div class="review_container" >
+                                <img src="./main_page/img/Daria_user.jpg" class="user_avatar" alt="Дарья">
+                                <div class="review_container">
                                     <h3>Дарья</h3>
                                     <p class="review_text">
-                                        В поиске хорошего магазина сладостей наткнулась на SeetLand и не пожалела. Упаковано очень хорошо, вместе со сладостями был небольшой подарочек и милейшее письмо
+                                        В поиске хорошего магазина сладостей наткнулась на SeetLand и не пожалела.
+                                        Упаковано очень хорошо, вместе со сладостями был небольшой подарочек и милейшее
+                                        письмо
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review_item">
+                        <div class="review_item" draggable="false">
                             <div class="review_card" style="--color: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)">
-                                <img src="./main_page/img/Timur_user.jpg" class="user_avatar">
-                                <div class="review_container" >
+                                <img src="./main_page/img/Timur_user.jpg" class="user_avatar" alt="Тимур">
+                                <div class="review_container">
                                     <h3>Timur K.</h3>
                                     <p class="review_text">
-                                        Сайт хороший, продукция очень вкусная, но с доставкой были проблемы, они перепутали мой адрес и прислали не туда. В итоге доставили, никуда не делись, но из-за этого заказ пришёл позже, чем должен был, поэтому 4/5
+                                        Сайт хороший, продукция очень вкусная, но с доставкой были проблемы, они
+                                        перепутали мой адрес и прислали не туда. В итоге доставили, никуда не делись, но
+                                        из-за этого заказ пришёл позже, чем должен был, поэтому 4/5
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="review_item">
+                        <div class="review_item" draggable="false">
                             <div class="review_card" style="--color:#8BC6EC;
                             background-image: linear-gradient(90deg, #8BC6EC 0%, #8386dd 100%)">
-                                <img src="./main_page/img/DenisPetrenko_user.jpg" class="user_avatar">
-                                <div class="review_container" >
+                                <img src="./main_page/img/DenisPetrenko_user.jpg" class="user_avatar" alt="Денис">
+                                <div class="review_container">
                                     <h3>Денис Петренко</h3>
                                     <p class="review_text">
-                                        Заказал впервые, так сказать на пробу. Доставили быстро, товар соответствует описанию. Дали скидку. Хороший магазин.
+                                        Заказал впервые, так сказать на пробу. Доставили быстро, товар соответствует
+                                        описанию. Дали скидку. Хороший магазин.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <i id="right" class="fa-solid fa-arrow-right"></i>
-
                 </div>
             </section>
             <article class="questions_form">
                 <div class="left_questions_form">
                     <h3 id="own_question">Остались вопросы?</h3>
                     <p>Вы можете написать или позвонить нам. Мы ответим на все интересующие вас вопросы!</p>
-                    <a  class="question_number">8(800)555 35-35</a><br>
-                    <a class="question_email">SweetShop@ya.ru</a>
+                    <a class="question_number" href="tel:+79207662452">8(920)766 24-52</a><br>
+                    <a class="question_email" href="mailto:SweetShop@yandex.ru">SweetShop@ya.ru</a>
                 </div>
-                
+
                 <div class="right_questions_form">
-                    <img src="./forum/img/letter.png" width="150px">
+                    <img src="./forum/img/letter.png" width="150px" alt="почта">
                     <h3>Подпишись!</h3>
                     <form class="questions">
                         <label for="question">Получай актуальную информацию о нашем магзине</label>
                         <div class="email_form">
                             <input type="emai" id="question" placeholder="Введите email" autocomplete="off">
-                            <button>Задать вопрос</button>
+                            <button>Отправить</button>
                         </div>
-                        
                     </form>
                 </div>
             </article>
-           
-           
-           
-            
         </main>
         <footer class="footer">
-           
             <div class="footer_container">
                 <div class="footer-menu">
                     <div class="footer_menu">
                         <nav class="footer_menu_body">
                             <ul class="footer_menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Доставка</a></li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -366,42 +365,49 @@
                                 <p>Москва, улица Льва Толстого, 16</p>
                             </div>
                             <div class="footer-email">
-                                <a href="mailto:sweetlandshop@yandex.ru">sweetlandshop@yandex.ru</a>
+                                <a href="mailto:SweetShop@yandex.ru">SweetShop@ya.ru</a>
                             </div>
                             <div class="footer-tel">
-                                <a href="tel:+78005553535">8(800)555-35-55</a>
-                            </div>                            
-                            </address>
+                                <a href="tel:+79207662452">8(920)766-24-52</a>
+                            </div>
+                        </address>
                     </div>
                 </div>
                 <div class="footer_info">
                     <h2>О нас</h2>
                     <div>
-                        Тут потом будет описание какой мега крутой  у нас магазин и чем он вообще занимается :) а пока тут бессмысленный текст текст текст текст.
+                        Наш магазин предлагает широкий выбор сладостей. Мы осуществляем доставку по всей России, также
+                        будем очень рады видеть вас в наших магазинах.
                     </div>
                     <div class=footer_social_media>
                         <ul class="social_media_list">
                             <li class="pinterest">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/pinterest.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/pinterest.png" alt="пинтерест"></a>
+                                </div>
                             </li>
-                            <li class="telegram"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/telegram.png"></a></div>   
+                            <li class="telegram">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/telegram.png" alt="телеграм"></a>
+                                </div>
                             </li>
                             <li class="youtube">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/youtube.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/youtube.png" alt="ютуб"></a></div>
                             </li>
-                            <li class="tiktok"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/tiktok.png"></a></div>   
+                            <li class="tiktok">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/tiktok.png" alt="тикток"></a></div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-          
         </footer>
     </div>
-    <script src="./js/burger.js"></script> 
+    <script src="./js/burger.js"></script>
+    <script src="./main_page/scripts/slider.js" defer></script>
+    <script src="./main_page/scripts/cards.js"></script>
 </body>
-
 
 </html>

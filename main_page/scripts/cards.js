@@ -1,9 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', ()=>{
     const text=document.getElementsByClassName("review_text");
 
     for(let i=0;i<text.length;i++){
-        text[i].textContent=truncate(text[i].textContent,250);      
+        text[i].textContent=truncate(text[i].textContent,260);      
     }
     
     function truncate(str,maxlength){
