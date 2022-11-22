@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelectorAll('.add_to_cart');
   const heart = document.querySelectorAll('.add_to_fav');
   for (let i = 0; i < btn.length; i++) {
