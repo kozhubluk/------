@@ -84,6 +84,14 @@
    overflow: hidden;
    border-radius: 8px;
  }
+ .accordions a {
+   color: #5a438c;
+   font-weight: bolder;
+ }
+ 
+ .accordions a:visited {
+   color: #d269a5;
+ }
  .accordion{
    width: 100%;
    overflow: hidden;

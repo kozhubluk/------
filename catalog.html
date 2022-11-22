@@ -9,61 +9,68 @@
     <link rel="stylesheet" href="catalog/styles/style.css">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
- 
+
 </head>
 
 <body>
-   
+
     <div class="wrapper">
         <header class="header">
             <div class="header-top">
                 <div class="header-top_container">
+                    <button type="button" class="icon-menu" id="burger"><span></span></button>
                     <div class="header-top_menu">
                         <nav class="menu_body">
                             <ul class="menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Оплата и доставка</a>
+                                </li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <a href="" class="header-top-user">Личный кабинет</a>
-                    <button type="button" class="icon-menu"><span>ddd</span></button>
+                    <div class="header-top_actions">
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
+                        <a class="user" href="./registration.html"><i class="fa-solid fa-user"></i>
+                            <p class="header-top-user">Личный кабинет</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="header-body">
                 <div class="header-body_container">
-                    <a class="header-logo">SweetLand</a>
+                    <a class="header-logo" href="./index.html">SweetLand</a>
                     <div class="header-body_search">
                         <form action="#" class="search">
                             <button type="submit" class="header-search_button"></button>
-                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="header-search_input" placeholder="">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                class="header-search_input" placeholder="">
                         </form>
                     </div>
                     <div class="header-body_actions">
                         <a href="#" class="actions_location">Москва</a>
-                        <div class="actions_phone">
+                        <div data-da="header-top_container" class="actions_phone">
                             <p class="phone_call">Позвоните нам!</p>
                             <a href=”tel:89207662452” class="phone-num">+7(920)766-24-52</a>
                         </div>
-                        <a href="#" class="actions_fav"></a>
-                        <a href="#" class="actions_cart"></a>
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
                     </div>
                 </div>
             </div>
-           
         </header>
         <main class="main">
             <section class="ad">
                 <div class="ad_catalog">
-                    
+
                     <div class="ad_content">
                         <button class="hide_ad"><i class="fa-solid fa-xmark"></i></button>
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>345 p</p> <p class="last_price"></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, voluptatum. Optio atque iste ullam non tempore reprehenderit itaque quae est.</p>
+                        <h3>Скидки на все виды товаров с 20.11 по 31.12</h3>
+                        <p>Акция до конца года: успейте сделать заказ до 31 декабря и получить уникальную скидку! Также
+                            весь декабрь применяется скидка 15% при оплате доставки. Не пропустите, порадуйте своих
+                            близких сладким подарком на Новый год!</p>
                     </div>
                 </div>
             </section>
@@ -77,131 +84,133 @@
                     <a href="#chocolate">Шоколад</a>
                     <a href="#ice-cream">Мороженое</a>
                     <a href="#cake">Торты</a>
-                
+
                 </div>
                 <div id="marmelad">
                     <h2>Мармелад</h2>
                     <div class="cards_container">
-                    <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/malina.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>123₽</p>
-                                    <p class="last_price">199₽</p>
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/malina.jpg">
                                 </div>
-                                <div class="item_name">Малина мармелад</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>123₽</p>
+                                        <p class="last_price">199₽</p>
+                                    </div>
+                                    <div class="item_name">Малина мармелад</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
                                 </div>
+
                             </div>
-                            
                         </div>
-                    </div>  <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/mishki.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>199₽</p>
-                                    <p class="last_price">239₽</p>
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/mishki.jpg">
                                 </div>
-                                <div class="item_name">Мармеладные мишки</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>199₽</p>
+                                        <p class="last_price">239₽</p>
+                                    </div>
+                                    <div class="item_name">Мармеладные мишки</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
                                 </div>
+
                             </div>
-                            
                         </div>
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/cherry.jpg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>144₽</p>
+                                        <p class="last_price">201₽</p>
+                                    </div>
+                                    <div class="item_name">Вишня мармелад</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/dolphins.jpg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>299₽</p>
+                                        <p class="last_price">345₽</p>
+                                    </div>
+                                    <div class="item_name">Дельфины</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/tape.jpg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>110₽</p>
+                                        <p class="last_price">129₽</p>
+                                    </div>
+                                    <div class="item_name">Лента мармеладная</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/cherry.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>144₽</p>
-                                    <p class="last_price">201₽</p>
-                                </div>
-                                <div class="item_name">Вишня мармелад</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/dolphins.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>299₽</p>
-                                    <p class="last_price">345₽</p>
-                                </div>
-                                <div class="item_name">Дельфины</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div> <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/tape.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>110₽</p>
-                                    <p class="last_price">129₽</p>
-                                </div>
-                                <div class="item_name">Лента мармеладная</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                   
-                </div>
                 </div>
                 <div id="drinks">
                     <h2>Напитки</h2>
                     <div class="cards_container">
-                    
+
                         <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
@@ -222,7 +231,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
@@ -245,7 +254,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
@@ -268,7 +277,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
@@ -291,7 +300,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
@@ -314,7 +323,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
@@ -337,9 +346,10 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
-                        </div> <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
                                     <img src="./catalog/img/natahtari.png">
@@ -359,16 +369,16 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
                 <div id="cookie">
-                    <h2>Печенье</h2 >
+                    <h2>Печенье</h2>
                     <div class="cards_container">
-                    
+
                         <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
@@ -389,20 +399,20 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
-                                    <img src="./catalog/img/malina.jpg">
+                                    <img src="./catalog/img/oreo.jpeg">
                                 </div>
                                 <div class="card_details">
                                     <div class="price">
                                         <p>123₽</p>
-                                        <p class="last_price">23₽</p>
+                                        <p class="last_price">223₽</p>
                                     </div>
-                                    <div class="item_name">Малина мармелааад</div>
+                                    <div class="item_name">Oreo шоколад</div>
                                     <div class="card_buttons">
                                         <button class="add_to_cart">
                                             В корзину
@@ -412,49 +422,48 @@
                                         </button>
                                     </div>
                                 </div>
-                                
-                            </div>
-                        </div> <div class="catalog_item">
-                            <div class="catalog_card">
-                                <div class="card_picture">
-                                    <img src="./catalog/img/malina.jpg">
-                                </div>
-                                <div class="card_details">
-                                    <div class="price">
-                                        <p>123₽</p>
-                                        <p class="last_price">23₽</p>
-                                    </div>
-                                    <div class="item_name">Малина мармелааад</div>
-                                    <div class="card_buttons">
-                                        <button class="add_to_cart">
-                                            В корзину
-                                        </button>
-                                        <button class="add_to_fav">
-                                            <i class="fa-solid fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                
+
                             </div>
                         </div>
-                    
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/americano.jpg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>85₽</p>
+                                        <p class="last_price">103₽</p>
+                                    </div>
+                                    <div class="item_name">Кухмастер Американо</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="sweets">
                     <h2>Конфеты</h2>
                     <div class="cards_container">
-                       
                         <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
-                                    <img src="./catalog/img/malina.jpg">
+                                    <img src="./catalog/img/kikkat.png">
                                 </div>
                                 <div class="card_details">
                                     <div class="price">
-                                        <p>123₽</p>
-                                        <p class="last_price">23₽</p>
+                                        <p>56₽</p>
+                                        <p class="last_price">90₽</p>
                                     </div>
-                                    <div class="item_name">Малина мармелааад</div>
+                                    <div class="item_name">Киткат</div>
                                     <div class="card_buttons">
                                         <button class="add_to_cart">
                                             В корзину
@@ -464,20 +473,20 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
-                                    <img src="./catalog/img/malina.jpg">
+                                    <img src="./catalog/img/sweets.png">
                                 </div>
                                 <div class="card_details">
                                     <div class="price">
-                                        <p>123₽</p>
-                                        <p class="last_price">23₽</p>
+                                        <p>240₽</p>
+                                        <p class="last_price">390₽</p>
                                     </div>
-                                    <div class="item_name">Малина мармелааад</div>
+                                    <div class="item_name">Ferrero Rocher</div>
                                     <div class="card_buttons">
                                         <button class="add_to_cart">
                                             В корзину
@@ -487,9 +496,57 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
-                        </div> <div class="catalog_item">
+                        </div>
+
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/neskwik.jpg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>56₽</p>
+                                        <p class="last_price">90₽</p>
+                                    </div>
+                                    <div class="item_name">Несквик</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/umka.jpeg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>42₽</p>
+                                        <p class="last_price">53₽</p>
+                                    </div>
+                                    <div class="item_name">Умка</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
                                     <img src="./catalog/img/dobr.jpeg">
@@ -509,16 +566,16 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
-               <div id="chocolate">
+                <div id="chocolate">
                     <h2>Шоколад</h2>
                     <div class="cards_container">
-                    
+
                         <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
@@ -539,7 +596,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
@@ -562,9 +619,10 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
-                        </div> <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
                                     <img src="./catalog/img/bounty.jpg">
@@ -584,16 +642,38 @@
                                         </button>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
-                    
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/f9474.jpg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>49₽</p>
+                                        <p class="last_price">29₽</p>
+                                    </div>
+                                    <div class="item_name">Babybox</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
-               </div>
-               <div class="ice-cream">
+                </div>
+                <div class="ice-cream">
                     <h2 id="ice-cream">Мороженое</h2>
                     <div class="cards_container">
-                    
+
                         <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
@@ -614,7 +694,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="catalog_item">
@@ -637,9 +717,10 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
-                        </div> <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
                             <div class="catalog_card">
                                 <div class="card_picture">
                                     <img src="./catalog/img/cow.jpg">
@@ -659,98 +740,75 @@
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
-                    
+
                     </div>
-               </div>
-               <div class="cake">
-                <h2 id="cake">Торты</h2>
-                <div class="cards_container">
-                   
-                    <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/malina.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>123₽</p>
-                                    <p class="last_price">23₽</p>
-                                </div>
-                                <div class="item_name">Малина мармелааад</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/malina.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>123₽</p>
-                                    <p class="last_price">23₽</p>
-                                </div>
-                                <div class="item_name">Малина мармелааад</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div> <div class="catalog_item">
-                        <div class="catalog_card">
-                            <div class="card_picture">
-                                <img src="./catalog/img/malina.jpg">
-                            </div>
-                            <div class="card_details">
-                                <div class="price">
-                                    <p>123₽</p>
-                                    <p class="last_price">23₽</p>
-                                </div>
-                                <div class="item_name">Малина мармелааад</div>
-                                <div class="card_buttons">
-                                    <button class="add_to_cart">
-                                        В корзину
-                                    </button>
-                                    <button class="add_to_fav">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                   
                 </div>
-               </div>
-               
-                
-               
-                
-               
+                <div class="cake">
+                    <h2 id="cake">Торты</h2>
+                    <div class="cards_container">
+
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/cake.png">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>160₽</p>
+                                        <p class="last_price">240₽</p>
+                                    </div>
+                                    <div class="item_name">Творожник</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_card">
+                                <div class="card_picture">
+                                    <img src="./catalog/img/medovik-atelier.jpg">
+                                </div>
+                                <div class="card_details">
+                                    <div class="price">
+                                        <p>270₽</p>
+                                        <p class="last_price">340₽</p>
+                                    </div>
+                                    <div class="item_name">Медовик</div>
+                                    <div class="card_buttons">
+                                        <button class="add_to_cart">
+                                            В корзину
+                                        </button>
+                                        <button class="add_to_fav">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
 
             </div>
-          
-                 
-        
-           
+
+
+
+
         </main>
         <footer class="footer">
             <div class="footer_container">
@@ -758,11 +816,10 @@
                     <div class="footer_menu">
                         <nav class="footer_menu_body">
                             <ul class="footer_menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Доставка</a></li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -775,43 +832,50 @@
                                 <p>Москва, улица Льва Толстого, 16</p>
                             </div>
                             <div class="footer-email">
-                                <a href="mailto:sweetlandshop@yandex.ru">sweetlandshop@yandex.ru</a>
+                                <a href="mailto:SweetShop@yandex.ru">SweetShop@ya.ru</a>
                             </div>
                             <div class="footer-tel">
-                                <a href="tel:+78005553535">8(800)555-35-55</a>
-                            </div>                            
-                            </address>
+                                <a href="tel:+79207662452">8(920)766-24-52</a>
+                            </div>
+                        </address>
                     </div>
                 </div>
                 <div class="footer_info">
                     <h2>О нас</h2>
                     <div>
-                        Тут потом будет описание какой мега крутой  у нас магазин и чем он вообще занимается :) а пока тут бессмысленный текст текст текст текст.
+                        Наш магазин предлагает широкий выбор сладостей. Мы осуществляем доставку по всей России, также
+                        будем очень рады видеть вас в наших магазинах.
                     </div>
                     <div class=footer_social_media>
                         <ul class="social_media_list">
                             <li class="pinterest">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/pinterest.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/pinterest.png" alt="пинтерест"></a>
+                                </div>
                             </li>
-                            <li class="telegram"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/telegram.png"></a></div>   
+                            <li class="telegram">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/telegram.png" alt="телеграм"></a>
+                                </div>
                             </li>
                             <li class="youtube">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/youtube.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/youtube.png" alt="ютуб"></a></div>
                             </li>
-                            <li class="tiktok"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/tiktok.png"></a></div>   
+                            <li class="tiktok">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/tiktok.png" alt="тикток"></a></div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
         </footer>
-       
-    </div> 
+
+    </div>
     <script src="./catalog/scripts/hide.js"></script>
     <script src="./catalog/scripts/card_buttons.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>

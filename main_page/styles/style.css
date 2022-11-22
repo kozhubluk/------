@@ -1,5 +1,6 @@
 @import url(../../header-footer.css);
 
+
 .main {
   font-family: "Comfortaa";
   font-size: 18px;
@@ -261,8 +262,6 @@ h3 {
   scale: 110%;
 }
 
-
-
 .category_banner {
   background-color: #FF9A8B;
   background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
@@ -307,6 +306,15 @@ h3 {
   display: grid;
   grid-template-columns: 60% 1fr;
   grid-template-rows: 1fr;
+}
+
+.shop_info a {
+  color: #5a438c;
+  font-weight: bolder;
+}
+
+.shop_info a:visited {
+  color: #d269a5;
 }
 
 .advantages {

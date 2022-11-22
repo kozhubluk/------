@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Магазин сладостей </title> <!-- название станицы -->
-    <link rel="icon" href="../favicon.ico"> <!-- фавиконка -->
-    <link rel="stylesheet" href="../null-style.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <title> Личный кабиинет </title> <!-- название станицы -->
+    <link rel="icon" href="./favicon.ico"> <!-- фавиконка -->
+    <link rel="stylesheet" href="./null-style.css">
+    <link rel="stylesheet" href="./registration/styles/style.css">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
@@ -16,42 +16,48 @@
         <header class="header">
             <div class="header-top">
                 <div class="header-top_container">
+                    <button type="button" class="icon-menu" id="burger"><span></span></button>
                     <div class="header-top_menu">
                         <nav class="menu_body">
                             <ul class="menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Оплата и доставка</a>
+                                </li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <a href="" class="header-top-user">Личный кабинет</a>
-                    <button type="button" class="icon-menu"><span>ddd</span></button>
+                    <div class="header-top_actions">
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
+                        <a class="user" href="./registration.html"><i class="fa-solid fa-user"></i>
+                            <p class="header-top-user">Личный кабинет</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="header-body">
                 <div class="header-body_container">
-                    <a class="logo">SweetLand</a>
+                    <a class="header-logo" href="./index.html">SweetLand</a>
                     <div class="header-body_search">
                         <form action="#" class="search">
                             <button type="submit" class="header-search_button"></button>
-                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="header-search_input" placeholder="">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                class="header-search_input" placeholder="">
                         </form>
                     </div>
                     <div class="header-body_actions">
                         <a href="#" class="actions_location">Москва</a>
-                        <div class="actions_phone">
+                        <div data-da="header-top_container" class="actions_phone">
                             <p class="phone_call">Позвоните нам!</p>
                             <a href=”tel:89207662452” class="phone-num">+7(920)766-24-52</a>
                         </div>
-                        <a href="#" class="actions_fav"></a>
-                        <a href="#" class="actions_cart"></a>
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
                     </div>
                 </div>
             </div>
-           
         </header>
         <main class="main">
             <div class="main_container">
@@ -80,7 +86,7 @@
                                         </div>
                                         <div class="input-box">
                                             <span class="details">Номер телефона</span>
-                                            <input type="text" placeholder="8(800) 555-35-35" required>
+                                            <input type="text" placeholder="8(999)999-00-00" required>
                                         </div>
                                         <div class="input-box">
                                             <span class="details">Город</span>
@@ -98,12 +104,6 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="circle" style="--i:2"></div>
-                        <div class="circle" style="--i:3"></div>
-                        <div class="circle" style="--i:2.5"></div>
-                        <div class="circle" style="--i:3.6"></div>
-                        <div class="circle" style="--i:4"></div>
-                        <div class="circle" style="--i:3.9"></div>
                     </div>
                 </div>
                 <div class="cards_block">
@@ -115,7 +115,7 @@
                         <div class="cards_items">
                             <div class="box">
                                 <div class="card_item">
-                                    <img src="img/card1.png">
+                                    <img src="./registration/img/card1.png" alt="рекомендации">
                                     <div class="card_text_container">
                                         <div class="card_details">
                                             <h2 class="card_name">Умные рекомендации</h2>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="box">
                                 <div class="card_item">
-                                    <img src="img/card4.png">
+                                    <img src="./registration/img/card4.png">
                                     <div class="card_text_container">
                                         <div class="card_details">
                                             <h2 class="card_name">Бонусы</h2>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="box">
                                 <div class="card_item">
-                                    <img src="img/card2.png">
+                                    <img src="./registration/img/card2.png">
                                     <div class="card_text_container">
                                         <div class="card_details">
                                             <h2 class="card_name">Удобство</h2>
@@ -151,7 +151,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -165,11 +164,10 @@
                     <div class="footer_menu">
                         <nav class="footer_menu_body">
                             <ul class="footer_menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Доставка</a></li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -182,41 +180,47 @@
                                 <p>Москва, улица Льва Толстого, 16</p>
                             </div>
                             <div class="footer-email">
-                                <a href="mailto:sweetlandshop@yandex.ru">sweetlandshop@yandex.ru</a>
+                                <a href="mailto:SweetShop@yandex.ru">SweetShop@ya.ru</a>
                             </div>
                             <div class="footer-tel">
-                                <a href="tel:+78005553535">8(800)555-35-55</a>
-                            </div>                            
-                            </address>
+                                <a href="tel:+79207662452">8(920)766-24-52</a>
+                            </div>
+                        </address>
                     </div>
                 </div>
                 <div class="footer_info">
                     <h2>О нас</h2>
                     <div>
-                        Тут потом будет описание какой мега крутой  у нас магазин и чем он вообще занимается :) а пока тут бессмысленный текст текст текст текст.
+                        Наш магазин предлагает широкий выбор сладостей. Мы осуществляем доставку по всей России, также
+                        будем очень рады видеть вас в наших магазинах.
                     </div>
                     <div class=footer_social_media>
                         <ul class="social_media_list">
                             <li class="pinterest">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/pinterest.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/pinterest.png" alt="пинтерест"></a>
+                                </div>
                             </li>
-                            <li class="telegram"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/telegram.png"></a></div>   
+                            <li class="telegram">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/telegram.png" alt="телеграм"></a>
+                                </div>
                             </li>
                             <li class="youtube">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/youtube.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/youtube.png" alt="ютуб"></a></div>
                             </li>
-                            <li class="tiktok"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="../img/tiktok.png"></a></div>   
+                            <li class="tiktok">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/tiktok.png" alt="тикток"></a></div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-          
         </footer>
     </div>
-  
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>

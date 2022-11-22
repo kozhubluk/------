@@ -8,52 +8,56 @@
     <link rel="stylesheet" href="null-style.css">
     <link rel="stylesheet" href="delivery/styles/style.css">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-   
     <div class="wrapper">
         <header class="header">
             <div class="header-top">
                 <div class="header-top_container">
+                    <button type="button" class="icon-menu" id="burger"><span></span></button>
                     <div class="header-top_menu">
                         <nav class="menu_body">
                             <ul class="menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Оплата и доставка</a>
+                                </li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <a href="" class="header-top-user">Личный кабинет</a>
-                    <button type="button" class="icon-menu"><span>ddd</span></button>
+                    <div class="header-top_actions">
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
+                        <a class="user" href="./registration.html"><i class="fa-solid fa-user"></i>
+                            <p class="header-top-user">Личный кабинет</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="header-body">
                 <div class="header-body_container">
-                    <a class="header-logo">SweetLand</a>
+                    <a class="header-logo" href="./index.html">SweetLand</a>
                     <div class="header-body_search">
                         <form action="#" class="search">
                             <button type="submit" class="header-search_button"></button>
-                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" class="header-search_input" placeholder="">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                class="header-search_input" placeholder="">
                         </form>
                     </div>
                     <div class="header-body_actions">
                         <a href="#" class="actions_location">Москва</a>
-                        <div class="actions_phone">
+                        <div data-da="header-top_container" class="actions_phone">
                             <p class="phone_call">Позвоните нам!</p>
                             <a href=”tel:89207662452” class="phone-num">+7(920)766-24-52</a>
                         </div>
-                        <a href="#" class="actions_fav"></a>
-                        <a href="#" class="actions_cart"></a>
+                        <a href="./favourite.html" class="actions_fav"></a>
+                        <a href="./cart.html" class="actions_cart"></a>
                     </div>
                 </div>
             </div>
-           
         </header>
         <main class="main">
             <div class="delivery_top_block">
@@ -61,110 +65,118 @@
                     <div class="delivery_details">
                         <h1>Доставка сладостей</h1>
                         <p>
-                            Наш магазин осуществляет доставку на всей территории старны. Мы заботимся о наших клиентах и делаем все возможное, чтобы сделать доставку еще более удобной. 
+                            Наш магазин осуществляет доставку на всей территории старны. Мы заботимся о наших клиентах и
+                            делаем все возможное, чтобы сделать доставку еще более удобной.
                         </p>
-                        <a href="./forum.html">Изучить каталог</a>
+                        <a href="./catalog.html">Изучить каталог</a>
                     </div>
                     <div class="delivery_picture">
-                        <img src="./delivery/img/delivery.png">   
-                    </div>         
+                        <img src="./delivery/img/delivery.png">
+                    </div>
                 </div>
             </div>
             <div class="delivery_wrapper">
                 <h2>Доставка по Москве и МО</h2>
                 <p>
-                    Наш магази носуществляет доставку товаров по Москве и Московской области несколькими способами. Нижк представлены наши основные тарифы:
-                    <table>
-                        <thead>
-                            <tr>
-                            <th>Доставка</th>
-                            <th>Цена</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Курьерская доставка по Москве в пределах МКАД</td>
-                                <td>350 ₽</td>
-                              </tr>
-                              <tr>
-                                <td>Доставка до ПВЗ Boxberry/СДЭК в Москве</td>
-                                <td>199 ₽</td>
-                              </tr>
-                              <tr>
-                                  <td>Доставка до ПВЗ Boxberry/СДЭК в Москве</td>
-                                  <td>199 ₽</td>
-                              </tr>
-                              <tr>
-                                  <td>Курьерская доставка по Москве (компанией Boxberry, Сдэк 2-4 дня)</td>
-                                  <td>199 ₽</td>
-                              </tr>
-                              <tr>
-                                  <td>Доставка по МО (2-4 дней)</td>
-                                  <td>270 ₽</td>
-                              </tr>        
-                        </tbody>
-                      </table>
-                 
-                </p>
-                <h2>Доставка по России</h2>
-                <p>
-                    Мы осуществляем отправку товаров во все города России. Отправка заказа производится исключительно после внесения 100% предоплаты. Оплатить заказ можно на сайте при оформлении заказа любым удобным для Вас способом: Банковской картой, Яндекс деньги, MasterPass, Альфа-Клик, Сбербанк Онлайн. 
-                    <span>При оформлении заказа на сумму более 3500 рублей доставка - бесплатно.</span>
-                </p>
+                    Наш магази носуществляет доставку товаров по Москве и Московской области несколькими способами. Нижк
+                    представлены наши основные тарифы:
                 <table>
                     <thead>
                         <tr>
-                        <th>Доставка</th>
-                        <th>Цена</th>
+                            <th>Доставка</th>
+                            <th>Цена</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Курьерская доставка по Москве в пределах МКАД</td>
                             <td>350 ₽</td>
-                            </tr>
-                            <tr>
+                        </tr>
+                        <tr>
                             <td>Доставка до ПВЗ Boxberry/СДЭК в Москве</td>
                             <td>199 ₽</td>
-                            </tr>
-                            <tr>
-                                <td>Доставка до ПВЗ Boxberry/СДЭК в Москве</td>
-                                <td>199 ₽</td>
-                            </tr>
-                            <tr>
-                                <td>Курьерская доставка по Москве (компанией Boxberry, Сдэк 2-4 дня)</td>
-                                <td>199 ₽</td>
-                            </tr>
-                            <tr>
-                                <td>Доставка по МО (2-4 дней)</td>
-                                <td>270 ₽</td>
-                            </tr>  
-                            <tr>
-                                <td>Доставка до ПВЗ Boxberry/СДЭК в Москве</td>
-                                <td>199 ₽</td>
-                                </tr>
-                                <tr>
-                                    <td>Доставка до ПВЗ Boxberry/СДЭК в Москве</td>
-                                    <td>199 ₽</td>
-                                </tr>
-                                <tr>
-                                    <td>Курьерская доставка по Москве (компанией Boxberry, Сдэк 2-4 дня)</td>
-                                    <td>199 ₽</td>
-                                </tr>
-                                <tr>
-                                    <td>Доставка по МО (2-4 дней)</td>
-                                    <td>270 ₽</td>
-                                </tr>        
+                        </tr>
+                        <tr>
+                            <td>Доставка до ПВЗ Boxberry/СДЭК в Москве</td>
+                            <td>199 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Курьерская доставка по Москве (компанией Boxberry, Сдэк 2-4 дня)</td>
+                            <td>199 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка по МО (2-4 дней)</td>
+                            <td>270 ₽</td>
+                        </tr>
                     </tbody>
-                    </table>
+                </table>
+
+                </p>
+                <h2>Доставка по России</h2>
+                <p>
+                    Мы осуществляем отправку товаров во все города России. Отправка заказа производится исключительно
+                    после внесения 100% предоплаты. Оплатить заказ можно на сайте при оформлении заказа любым удобным
+                    для Вас способом: Банковской картой, Яндекс деньги, MasterPass, Альфа-Клик, Сбербанк Онлайн.
+                    <span>При оформлении заказа на сумму более 3500 рублей доставка - бесплатно.</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Доставка</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Доставка Почтой России в Ваш город (только по РФ)</td>
+                            <td>250 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Самовывоз из пунктов выдачи BoxBerry по России</td>
+                            <td>350 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Самовывоз из пункты выдачи СДЭК по России</td>
+                            <td>350 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка любым способом при сумме заказа от 3500 рублей</td>
+                            <td>0 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка Почтой России в Санкт-Петербург</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка Почтой России в Екатеринбург</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка Почтой России в Казань</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка Почтой России в Новосибирск</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Курьерская доставка (Казань, Новосибирск, Екатеринбург, СПБ)</td>
+                            <td>499 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Курьерская доставка в остальных городаз России</td>
+                            <td>509 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="delivery_cards">
                 <div class="cards_container">
                     <div class="card_item">
                         <img src="./delivery/img/delivery-truck.png">
                         <h3>Беспалтная доставка</h3>
-                        <p>При заказе от 3500 рублей мы осуществляем бесплатную доставкук во все города России.</p>    
-                        </div>
+                        <p>При заказе от 3500 рублей мы осуществляем бесплатную доставкук во все города России.</p>
+                    </div>
                     <div class="card_item">
                         <img src="./delivery/img/deliver.png">
                         <h3>Удобство</h3>
@@ -188,8 +200,8 @@
                     </div>
                 </div>
             </div>
-            
-           
+
+
         </main>
         <footer class="footer">
             <div class="footer_container">
@@ -197,11 +209,10 @@
                     <div class="footer_menu">
                         <nav class="footer_menu_body">
                             <ul class="footer_menu_list">
-                                <li class="menu_item"><a href="" class="menu_link">Главная</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Оплата и доставка</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Акции</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Каталог</a></li>
-                                <li class="menu_item"><a href="" class="menu_link">Контакты</a></li>
+                                <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                                <li class="menu_item"><a href="./delivery.html" class="menu_link">Доставка</a></li>
+                                <li class="menu_item"><a href="./catalog.html" class="menu_link">Каталог</a></li>
+                                <li class="menu_item"><a href="./forum.html" class="menu_link">Форум</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -214,41 +225,48 @@
                                 <p>Москва, улица Льва Толстого, 16</p>
                             </div>
                             <div class="footer-email">
-                                <a href="mailto:sweetlandshop@yandex.ru">sweetlandshop@yandex.ru</a>
+                                <a href="mailto:SweetShop@yandex.ru">SweetShop@ya.ru</a>
                             </div>
                             <div class="footer-tel">
-                                <a href="tel:+78005553535">8(800)555-35-55</a>
-                            </div>                            
-                            </address>
+                                <a href="tel:+79207662452">8(920)766-24-52</a>
+                            </div>
+                        </address>
                     </div>
                 </div>
                 <div class="footer_info">
                     <h2>О нас</h2>
                     <div>
-                        Тут потом будет описание какой мега крутой  у нас магазин и чем он вообще занимается :) а пока тут бессмысленный текст текст текст текст.
+                        Наш магазин предлагает широкий выбор сладостей. Мы осуществляем доставку по всей России, также
+                        будем очень рады видеть вас в наших магазинах.
                     </div>
                     <div class=footer_social_media>
                         <ul class="social_media_list">
                             <li class="pinterest">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/pinterest.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/pinterest.png" alt="пинтерест"></a>
+                                </div>
                             </li>
-                            <li class="telegram"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/telegram.png"></a></div>   
+                            <li class="telegram">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/telegram.png" alt="телеграм"></a>
+                                </div>
                             </li>
                             <li class="youtube">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/youtube.png"></a></div>   
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/youtube.png" alt="ютуб"></a></div>
                             </li>
-                            <li class="tiktok"><a href="sdf">
-                                <div class="social_media_back"></div><div class="social_media"><a href="sdf"><img src="img/tiktok.png"></a></div>   
+                            <li class="tiktok">
+                                <div class="social_media_back"></div>
+                                <div class="social_media"><a href="#"><img src="img/tiktok.png" alt="тикток"></a></div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
         </footer>
-       
-    </div> 
+
+    </div>
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>

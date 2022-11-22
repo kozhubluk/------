@@ -1,218 +1,171 @@
-@import url(../../header-footer.css); /*подулючаем стиль с хедером и футером*/
+@import url(../../header-footer.css);
+
+/*подулючаем стиль с хедером и футером*/
 main {
   font-family: 'Comfortaa';
 }
+
 /*форма регитсрации*/
 .registration_container {
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
 }
+
 .registration_block {
-    padding: 120px 20px;
-    height: 100%;
-  	background: linear-gradient(-45deg, #e8d65e, #bc60b1, #5b92c8, #86d3b2);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
+  padding: 120px 20px;
+  height: 100%;
+  background: linear-gradient(-45deg, #e8d65e, #bc60b1, #5b92c8, #86d3b2);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.registration_container{
-    max-width: 600px;
-    position: relative;
+
+.registration_container {
+  max-width: 600px;
+  position: relative;
 }
+
 .registration {
-    position: relative;
-    max-width: 100%;
-    background-color: rgb(232, 232, 233);
-    box-shadow: 5px 10px 15px rgba(123, 12, 150, 0.082);
-    margin: auto;
-    border-radius: 15px;
-    padding: 30px;
-    z-index: 3;
-    transition: ease 1s;
+  position: relative;
+  max-width: 100%;
+  background-color: rgb(232, 232, 233);
+  box-shadow: 5px 10px 15px rgba(123, 12, 150, 0.082);
+  margin: auto;
+  border-radius: 15px;
+  padding: 30px;
+  z-index: 3;
+  transition: ease 1s;
 }
+
 .registration_form {
-    position: relative;
-    max-width: 700px;
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 15px;
+  padding: 20px;
+  z-index: 100;
+}
 
-    margin: auto;
-    border-radius: 15px;
-    padding: 20px;
-    z-index: 100;
+.registration .title {
+  /*стиль для названия*/
+  font-size: 25px;
+  line-height: 30px;
+  position: relative;
 }
-.registration .title { /*стиль для названия*/
-    font-size: 25px;
-    line-height: 30px;
-    position: relative;
-}
+
 .registration .title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    height: 3px;
-    width: 50px;
-    background: linear-gradient(to left, rgb(209, 169, 227), rgb(167, 124, 206));
-}
-/*ввод*/
-.user-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.user-details .input-box{
-    margin: 15px auto;
-    width: calc(100% / 2 - 25px);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  height: 3px;
+  width: 50px;
+  background: linear-gradient(to left, rgb(209, 169, 227), rgb(167, 124, 206));
 }
 
-.user-details .input-box input{
-    width: 100%;
-    height: 45px;
-    border: 1px solid rgb(186, 186, 186);
-    border-bottom-width: 2px;
-    padding: 3px;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    transition: all 0.3s ease;
+/*ввод*/
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.user-details .input-box input:focus{
-  border-color:  rgb(195, 129, 210);
+
+.user-details .input-box {
+  margin: 15px auto;
+  width: calc(100% / 2 - 25px);
 }
-form .button{
+
+.user-details .input-box input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgb(186, 186, 186);
+  border-bottom-width: 2px;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus {
+  border-color: rgb(195, 129, 210);
+}
+
+form .button {
   height: 45px;
   width: 95%;
   margin: auto;
   margin-top: 30px;
 }
-form .button input{
+
+form .button input {
   height: 100%;
   width: 100%;
   outline: none;
   border-radius: 6px;
   color: white;
   background: linear-gradient(-135deg, #e8d65e, #bc60b1, #5b92c8, #86d3b2);
-	background-size: 400% 400%;
+  background-size: 400% 400%;
   animation: gradient 20s ease infinite;
 }
 
-form .button input:active{
+form .button input:active {
   opacity: 90%;
 }
+
 @keyframes floating_figures {
-    from, to {
-        transform: translateY(10px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    
+
+  from,
+  to {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
 }
-.circle {
-    animation-name: floating_figures;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-duration: calc(2s * var(--i));
-    animation-iteration-count: infinite;
-    border-radius: 50%;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.171);
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.082);
-    background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.208),
-    #fff9f90a);
-    position: absolute;
-    transition: ease 0.7s;
-  }
-    .circle:hover{
-    scale: 120%;
-    opacity: 70%;
-    backdrop-filter: blur(1px);
-  }
-  /*анимированные "стеклянные" кружочки*/
-  .circle:nth-child(1) {
-    top: 60%;
-    width: 6rem;
-    height: 6rem;
-    z-index: 6;
-    right: -60px;
-  }
-  .circle:nth-child(2) {
-    top: 30%;
-    width: 10rem;
-    height: 10rem;
-    z-index: 6;
-    right: calc(100% - 30px);
-  }
-  .circle:nth-child(3){
-    top: -67px;
-    width: 3rem;
-    height: 3rem;
-    z-index: 4;
-    right: 25%;
-  }
-  .circle:nth-child(4){
-    top: calc(100% - 20px);
-    width: 4.5rem;
-    height: 4.5rem;
-    z-index: 1;
-    right: 50%;
-  }
-  .circle:nth-child(5){
-    top: -65px;
-    width: 5.8rem;
-    height: 5.8rem;
-    z-index: 4;
-    right: 70%;
-  }
-  .circle:nth-child(6){
-    top: -13%;
-    width: 7rem;
-    height: 7rem;
-    z-index: 1;
-    right: -40px;
-  }
-  .circle:nth-child(7){
-    top: 60%;
-    width: 6rem;
-    height: 6rem;
-    z-index: 6;
-    right: -60px;
-  }
+
 /****************Стеклянные карточки******************/
 .cards_container {
-    color: rgb(232, 232, 233);
-    max-width: 1200px;
-    margin: auto;
-    font-size: 20px;
-    padding: 25px 20px;
+  color: rgb(232, 232, 233);
+  max-width: 1200px;
+  margin: auto;
+  font-size: 20px;
+  padding: 25px 20px;
 }
-.cards_container > div{
+
+.cards_container>div {
   margin-bottom: 25px;
 }
-.cards_container h1{
-    font-size: 28px;
-    font-weight: bolder;
-    margin-bottom: 20px;
+
+.cards_container h1 {
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 20px;
 }
+
 .cards_items {
   gap: 40px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.box{
+
+.box {
   position: relative;
   width: 300px;
   height: 430px;
@@ -221,44 +174,49 @@ form .button input:active{
   border-radius: 15px;
   transition: ease 0.55s;
 }
-.box:hover{
+
+.box:hover {
   rotate: 5deg;
   scale: 105%;
   box-shadow: 0 8px 32px 0 rgba(189, 43, 197, 0.408);
 }
+
 .card_item {
-  position:absolute;
+  position: absolute;
   width: 97%;
   height: 97%;
   margin: auto;
   z-index: 3;
-	top: 0;
-	left: 0;
-	right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
   border-radius: 15px;
-  background: linear-gradient(
-    to right bottom,
-    rgb(43, 40, 52), rgb(57, 55, 66));
+  background: linear-gradient(to right bottom,
+      rgb(43, 40, 52), rgb(57, 55, 66));
   flex-wrap: wrap;
 }
-.card_item h2{
+
+.card_item h2 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 16px;
 }
-.card_item img{
+
+.card_item img {
   position: absolute;
   width: 75%;
   -webkit-filter: drop-shadow(3px 5px 5px #000);
   filter: drop-shadow(3px 5px 5px rgba(42, 5, 38, 0.267));
   padding: 14px;
-	top: 0;
-	left: 0;
-	right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
-.card_details { /*текст карточки*/
+
+.card_details {
+  /*текст карточки*/
   position: absolute;
   text-align: center;
   font-size: 16px;
@@ -266,44 +224,50 @@ form .button input:active{
   bottom: 0;
   padding: 26px 12px;
 }
-.box::before{ /***анимированная рамка***/
+
+.box::before {
+  /***анимированная рамка***/
   content: "";
   position: absolute;
   top: 0;
   left: -50%;
   width: 100%;
   height: 50%;
-  z-index:00;
-  background: linear-gradient( transparent,  rgb(153, 73, 194), transparent);
+  z-index: 00;
+  background: linear-gradient(transparent, rgb(153, 73, 194), transparent);
   transform-origin: bottom right;
   animation: rotate_cube 5s linear infinite;
 }
-.box::after{
+
+.box::after {
   content: "";
   position: absolute;
   top: 0;
   left: -50%;
   width: 100%;
   height: 50%;
-  z-index:00;
-  background: linear-gradient( transparent,  rgb(218, 36, 175), transparent);
+  z-index: 00;
+  background: linear-gradient(transparent, rgb(218, 36, 175), transparent);
   transform-origin: bottom right;
   animation: rotate_cube 5s linear infinite;
   animation-delay: -2.5s;
 }
-@keyframes rotate_cube { /*анимация прокрутки*/
-  from{
+
+@keyframes rotate_cube {
+
+  /*анимация прокрутки*/
+  from {
     rotate: 0deg;
   }
-  to{
+
+  to {
     rotate: 360deg;
   }
 }
-@media (max-width: 612px){
-  .user-details .input-box{
+
+@media (max-width: 612px) {
+  .user-details .input-box {
     margin-bottom: 0px;
     width: calc(100% - 20px);
+  }
 }
-}
-
-
