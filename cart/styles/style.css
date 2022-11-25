@@ -196,6 +196,12 @@ button.pay:active{
    text-align: center;
    padding: 2px;
 }
+@media (max-width: 1030px){
+   .catalog_item .remove{
+      visibility: visible;
+      opacity: 90%;
+   }
+}
 @media (max-width: 630px) {
    .catalog_card{
       flex-direction: column;

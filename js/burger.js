@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
         else {
             burgerButton.classList.add("active");
-        
             menu.style.left = "0";
         }
 

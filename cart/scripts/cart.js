@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    var cross = document.querySelectorAll('.remove');
+    var cross = document.getElementsByClassName('remove');
     var minusButtons = document.getElementsByClassName('minus');
     var plusButtons = document.getElementsByClassName('plus');
     updateTotal();
@@ -12,20 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             //let login = confirm("Вы уверены, что хотите удалить товар из корзины?"); // модальное окно с кнопками ок и отмена
             //if(!login) return;
+            console.log(cross, minusButtons, plusButtons);
             crossClicked.remove();
             updateTotal();
         })
     }
     for (let i = 0; i < minusButtons.length; i++) {
         minusButtons[i].addEventListener('click', function () {
-            var quantity = minusButtons[i].parentElement.getElementsByClassName("counter")[0];
+            console.log("i = ", i);
+            var quantity = this.parentElement.getElementsByClassName("counter")[0];
             if (quantity.innerText > 1) quantity.innerText = quantity.innerText - 1;
             updateTotal();
         })
     }
     for (let i = 0; i < plusButtons.length; i++) {
         plusButtons[i].addEventListener('click', function () {
-            var quantity = plusButtons[i].parentElement.getElementsByClassName("counter")[0];
+            var quantity = this.parentElement.getElementsByClassName("counter")[0];
             if (Number(quantity.innerText) < 100) quantity.innerText = Number(quantity.innerText) + 1;
             updateTotal();
         })

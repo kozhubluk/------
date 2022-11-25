@@ -211,4 +211,10 @@ h1{
  button.add_to_fav.liked:active{
     color: #e45e79;
  }
+ @media (max-width: 1030px){
+   .catalog_item .remove{
+      visibility: visible;
+      opacity: 90%;
+   }
+}
  
