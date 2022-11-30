@@ -9,6 +9,7 @@
     --main-color: #dc5b7d;
     --main-background-color: rgb(232, 232, 233);;
 } 
+
 .header{
     z-index: 40;
 }
