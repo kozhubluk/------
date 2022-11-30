@@ -512,7 +512,7 @@ p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .review_item {
     width: calc((100%)/2);
   }
@@ -573,7 +573,7 @@ p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   .review_item {
     width: calc(100%);
   }
@@ -585,4 +585,5 @@ p {
   .right_questions_form {
     padding: 10px;
   }
+
 }

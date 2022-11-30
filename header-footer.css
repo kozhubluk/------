@@ -9,8 +9,13 @@
     --main-color: #dc5b7d;
     --main-background-color: rgb(232, 232, 233);;
 } 
-
-
+.header{
+    z-index: 40;
+}
+.fio {
+    margin-top: 10px;
+    font-size: 12px;
+}
 body {
     background-color: var(--main-dark-color);
 }
@@ -133,7 +138,7 @@ footer, .header-top {
     letter-spacing: 0.4px;
 }
 .header-logo { /*стиль логотипа*/
-    flex-grow: 0.2;
+    flex-grow: 1;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: var(--main-dark-color);
@@ -142,7 +147,7 @@ footer, .header-top {
     transition: .4S;
 }
 .header-logo:hover {
-    transform: scale(110%);
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.266);
 }
 .header-top_actions{
     display: flex;
@@ -205,7 +210,6 @@ footer, .header-top {
     position: relative;
     width: 35px;
 }
- 
 .icon-menu > span,
 .icon-menu  > span::before,
 .icon-menu  > span::after {
@@ -231,7 +235,6 @@ footer, .header-top {
 .icon-menu.active>span::before{
     top: 0;
     transform: rotate(0);
-
 }
 .icon-menu.active>span::after{
     top: 0;
@@ -302,7 +305,7 @@ address {
 .back{
     width: 100%;
     height: 100%;
-    z-index: 90;
+    z-index: 9;
 }
 .social_media {
     position: absolute;
@@ -311,7 +314,7 @@ address {
     left:0;
     top: 0;
     margin: auto;
-    z-index: 100;
+    z-index: 10;
 }
 .social_media_back::after{
     content: "";
@@ -417,10 +420,7 @@ address {
     }
 }
 @media (max-width: 940px){
-    a.actions_location, .actions_phone{
-        display: none;
-        display: none;
-    }
+   
     .header-body_actions{
         justify-content: space-around;
     }
@@ -432,6 +432,10 @@ address {
     }
 }
 @media  (max-width: 767px) {
+    a.actions_location, .actions_phone{
+        display: none;
+        display: none;
+    }
     .header-top_menu{
         position: absolute;
         width: 100%;
@@ -439,7 +443,7 @@ address {
         top: 100%;
         padding: 15px;
         opacity: 96%;
-        ;
+        z-index: 15;
         background-color: var(--main-dark-color);
         width: 100vw; height: 100vh; 
         transition: all .3s ease;

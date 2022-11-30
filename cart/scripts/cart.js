@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    var cross = document.getElementsByClassName('remove');
-    var minusButtons = document.getElementsByClassName('minus');
-    var plusButtons = document.getElementsByClassName('plus');
+    const cross = document.getElementsByClassName('remove');
+    const minusButtons = document.getElementsByClassName('minus');
+    const plusButtons = document.getElementsByClassName('plus');
     updateTotal();
+
     for (let i = 0; i < cross.length; i++) {
         cross[i].addEventListener('click', function (event) {
             var crossClicked = event.target;
             console.log(crossClicked.className);
-            while (crossClicked.className != "catalog_item") { // получаем родительский элемент, который надо удалить
+            while (crossClicked.className != "catalog_item") { 
                 crossClicked = crossClicked.parentElement;
             }
-            //let login = confirm("Вы уверены, что хотите удалить товар из корзины?"); // модальное окно с кнопками ок и отмена
-            //if(!login) return;
             console.log(cross, minusButtons, plusButtons);
             crossClicked.remove();
             updateTotal();
